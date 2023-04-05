@@ -1,0 +1,53 @@
+/* CSS Reset */
+
+/* Reset de margens e preenchimentos */
+body, figure, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dd, ol, ul, figure, pre, hr, fieldset, legend, textarea, input[type="button"], input[type="reset"], input[type="submit"], select, optgroup, option {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset de bordas */
+fieldset, img, h1, h2, h3, h4, h5, h6, input, select, textarea, button {
+  border: 0;
+}
+
+/* Reset de estilos de lista */
+ol, ul {
+  list-style: none;
+}
+
+/* Reset de estilos de fonte e espaçamento */
+body, button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Reset de espaçamento de lista */
+li {
+  padding: 0;
+}
+
+/* Reset de estilos de formatação de texto */
+button, input, select, textarea {
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+}
+
+/* Reset de estilos de exibição */
+button, input {
+  overflow: visible;
+}
+
+/* Reset de estilos de tabela */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset de estilos de preenchimento interno */
+td, th {
+  padding: 0;
+}
