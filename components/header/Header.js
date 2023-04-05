@@ -1,3 +1,4 @@
+import Logo from '../Logo/Logo'
 import styles from './Header.module.css'
 
 export default function Header () {
@@ -7,12 +8,8 @@ export default function Header () {
                 container
                 ${ styles.header }
             `}
-            style={{
-                background: '#fea',
-                width: '100%',
-                height: '100px'
-            }}
         >
+            <Logo/>
         </header>
     )
 }

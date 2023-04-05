@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
 @import url('./reset.css');
+
+body {
+    --type-main: 'Montserrat Alternates', sans-serif;
+    --color-main: #fff;
+    --color-bg: #202020;
+
+    font-family: var(--type-main);
+    background-color: var(--color-bg);
+}
 
 .container {
     max-width: 1100px;

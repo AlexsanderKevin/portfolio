@@ -51,3 +51,8 @@ table {
 td, th {
   padding: 0;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.logo {
+    border: solid 3px var(--color-main);
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    color: var(--color-main);
+}
