@@ -1,4 +1,5 @@
-import Logo from '../Logo/Logo'
+import LogoButton from '../Logo/LogoButton'
+import Nav from '../Nav/Nav'
 import styles from './Header.module.css'
 
 export default function Header () {
@@ -9,7 +10,8 @@ export default function Header () {
                 ${ styles.header }
             `}
         >
-            <Logo/>
+            <LogoButton/>
+            <Nav/>
         </header>
     )
 }
