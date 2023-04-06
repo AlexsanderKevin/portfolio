@@ -1,0 +1,9 @@
+* {
+    --animation-fill-underline: fillUnderline
+}
+
+@keyframes fillUnderline {
+    to {
+        width: 100%;
+    }
+}

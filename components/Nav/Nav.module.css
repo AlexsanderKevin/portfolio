@@ -10,10 +10,10 @@
     height: 20px
 }
 
-.navContainer a {
-    color: var(--color-main);
+.navContainer a:hover,
+.navContainer a:global(.active){
+    color: var(--color-main)
 }
-
 
 .navContainer a:global(.active)::after,
 .navContainer a:hover::after {
@@ -22,11 +22,11 @@
     display: block;
     width: 0;
     background-color: var(--color-main);
-    animation: fillUnderline .3s forwards;
+    animation: var(--animation-fill-underline) .3s forwards;
 }
 
-@keyframes fillUnderline {
+/* @keyframes fillUnderline {
     to {
         width: 100%;
     }
-}
+} */
