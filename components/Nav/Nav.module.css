@@ -1,0 +1,32 @@
+.navContainer {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navContainer a {
+    color: var(--color-secondary);
+    font-weight: lighter;
+    box-sizing: border-box;
+    height: 20px
+}
+
+.navContainer a {
+    color: var(--color-main);
+}
+
+
+.navContainer a:global(.active)::after,
+.navContainer a:hover::after {
+    content: '';
+    height: 2px;
+    display: block;
+    width: 0;
+    background-color: var(--color-main);
+    animation: fillUnderline .3s forwards;
+}
+
+@keyframes fillUnderline {
+    to {
+        width: 100%;
+    }
+}

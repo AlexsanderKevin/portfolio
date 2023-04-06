@@ -9,4 +9,5 @@
     font-weight: bold;
     transform: rotate(-90deg);
     color: var(--color-main);
+    cursor: pointer;
 }
