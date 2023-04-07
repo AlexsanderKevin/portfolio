@@ -1,0 +1,28 @@
+.navContainer {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navContainer a {
+    color: var(--color-secondary);
+    font-weight: lighter;
+    box-sizing: border-box;
+    height: 20px
+}
+
+.navContainer a:hover,
+.navContainer a:global(.active){
+    color: var(--color-main)
+}
+
+/* .navContainer a:global(.active)::after,
+.navContainer a:hover::after {
+    content: '';
+    height: 3px;
+    margin-top: 3px;
+    display: block;
+    width: 0;
+    background-color: var(--color-main);
+    animation: var(--animation-fill-underline) .3s forwards;
+} */

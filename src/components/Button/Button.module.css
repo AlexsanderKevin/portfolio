@@ -1,0 +1,35 @@
+.button {
+  color: var(--color-main);
+  font-weight: bold;
+  border: solid 3px var(--color-main);
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  background: none;
+  position: relative;
+}
+
+.button:hover {
+  color: var(--color-bg);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-main);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+}
+
+.button:hover::before {
+  animation: fillButton .3s forwards;
+}
+
+@keyframes fillButton {
+  to {
+    width: 100%;
+  }
+}
