@@ -1,3 +1,13 @@
+.fill-underline::after {
+    content: '';
+    height: 3px;
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    background-color: var(--color-main);
+    animation: unfill-bg .3s forwards;
+}
+
 .fill-underline.active::after,
 .fill-underline:hover::after {
     content: '';
@@ -6,11 +16,43 @@
     display: block;
     width: 0;
     background-color: var(--color-main);
-    animation: fill-background .3s forwards;
+    animation: fill-bg .3s forwards;
 }
 
-@keyframes fill-background {
+.fill-bg:hover {
+    color: var(--color-bg);
+}
+
+.fill-bg::before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-main);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  animation: unfill-bg .3s forwards;
+}
+
+.fill-bg:hover::before {
+  animation: fill-bg .3s forwards;
+}
+
+@keyframes fill-bg {
+    from {
+        width: 0;
+    }
     to {
         width: 100%;
+    }
+}
+
+@keyframes unfill-bg {
+    from {
+        width: 100%
+    }
+    to {
+        width: 0;
     }
 }
