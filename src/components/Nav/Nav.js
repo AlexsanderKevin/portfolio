@@ -20,7 +20,7 @@ const Nav = () => {
     }
 
     return (
-        <nav className={ styles.navContainer }>
+        <nav className={` ${styles.navContainer} fade-in-right `}>
             { items.map( item => (
                 <Anchor 
                     id={item.id}

@@ -40,19 +40,26 @@
 }
 
 @keyframes fill-bg {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 @keyframes unfill-bg {
-    from {
-        width: 100%
-    }
-    to {
-        width: 0;
-    }
+    from { width: 100% }
+    to { width: 0; }
+}
+
+.fade-in-right {
+    transform: translateX(3rem);
+    animation: fade-in .7s forwards;
+}
+
+.fade-in-left {
+    transform: translateX(-3rem);
+    animation: fade-in .7s forwards;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { transform: translateY(0); opacity: initial; }
 }
