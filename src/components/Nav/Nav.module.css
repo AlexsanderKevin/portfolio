@@ -6,7 +6,6 @@
 
 .navContainer a {
     color: var(--color-secondary);
-    font-weight: lighter;
     box-sizing: border-box;
     height: 20px
 }

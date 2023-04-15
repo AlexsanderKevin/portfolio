@@ -4,7 +4,9 @@ const Button = ({ children }) => {
   return (
     <button
       className={` ${styles.button} fill-bg `}
-    >{ children }</button>
+      >
+      { children }
+    </button>
   )
 }
 
