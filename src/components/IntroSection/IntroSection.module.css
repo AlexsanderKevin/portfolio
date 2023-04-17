@@ -1,14 +1,14 @@
 .introSection p:first-of-type {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .introSection p {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   max-width: 30rem;
 }
 
 .introSection h1, h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .introSection h1 {
@@ -16,7 +16,7 @@
 }
 
 .introSection h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .introSection h2::after {
@@ -25,10 +25,6 @@
   width: 9rem;
   background-color: var(--color-secondary);
   display: block;
-  border-radius: .2rem;
-  margin-top: .5rem;
-}
-
-.introSection a {
-  margin-top: 9rem;
+  border-radius: .15rem;
+  margin-top: .7rem;
 }

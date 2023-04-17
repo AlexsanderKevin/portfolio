@@ -7,7 +7,7 @@ export default function Header () {
         <header 
             className={`
                 container
-                ${ styles.header }
+                ${styles.header}
             `}
         >
             <LogoButton/>
