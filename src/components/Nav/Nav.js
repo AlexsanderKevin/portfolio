@@ -1,4 +1,3 @@
-import Button from '../Button/Button'
 import styles from './Nav.module.css'
 import '../../styles/animation.css'
 import Anchor from '../Anchor/Anchor'
@@ -34,7 +33,7 @@ const Nav = () => {
                 </Anchor>
             ))}
 
-            <Button> Resume </Button>
+            <button className='button-main fill-bg'> Resume </button>
         </nav>
     )
 }

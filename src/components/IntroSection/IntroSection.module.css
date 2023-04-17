@@ -1,0 +1,34 @@
+.introSection p:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.introSection p {
+  margin-bottom: 3rem;
+  max-width: 30rem;
+}
+
+.introSection h1, h2 {
+  font-size: 3rem;
+}
+
+.introSection h1 {
+  color: var(--color-main);
+}
+
+.introSection h2 {
+  margin-bottom: 2rem;
+}
+
+.introSection h2::after {
+  content: '';
+  height: .6rem;
+  width: 9rem;
+  background-color: var(--color-secondary);
+  display: block;
+  border-radius: .2rem;
+  margin-top: .5rem;
+}
+
+.introSection a {
+  margin-top: 9rem;
+}

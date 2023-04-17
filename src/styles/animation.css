@@ -1,7 +1,7 @@
 .fill-underline::after {
     content: '';
-    height: 3px;
-    margin-top: 3px;
+    height: 4px;
+    margin-top: 4px;
     display: block;
     width: 100%;
     background-color: var(--color-main);
@@ -11,8 +11,8 @@
 .fill-underline.active::after,
 .fill-underline:hover::after {
     content: '';
-    height: 3px;
-    margin-top: 3px;
+    height: 4px;
+    margin-top: 4px;
     display: block;
     width: 0;
     background-color: var(--color-main);

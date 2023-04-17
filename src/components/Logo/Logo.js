@@ -3,7 +3,7 @@ import styles from './Logo.module.css'
 const Logo = () => {
     return (
         <div 
-            className={` ${styles.logo} fade-in-left `} 
+            className={` ${styles.logo} `} 
         > K </div>
     )
 }

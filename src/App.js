@@ -1,10 +1,12 @@
 import Header from './components/Header/Header';
+import IntroSection from './components/IntroSection/IntroSection';
 import './styles/global.css'
 
 function App() {
   return (
-    <section className='container'>
-      <Header />
+    <section>
+      <Header/>
+      <IntroSection/>
     </section>
   );
 }

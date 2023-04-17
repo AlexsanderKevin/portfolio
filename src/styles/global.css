@@ -10,9 +10,28 @@ body {
 
     font-family: var(--type-main);
     background-color: var(--color-bg);
+    color: var(--color-secondary);
+}
+
+strong {
+    font-weight: normal;
+    color: var(--color-main);
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
 }
+
+.button-main {
+  color: var(--color-main);
+  font-weight: bold;
+  border: solid 3px var(--color-main);
+  border-radius: .375rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  background: none;
+  position: relative;
+}
+
