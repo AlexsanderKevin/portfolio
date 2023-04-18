@@ -1,10 +1,7 @@
 .introSection p:first-of-type {
-  margin-bottom: 2rem;
-}
-
-.introSection p {
-  margin-bottom: 4rem;
-  max-width: 30rem;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fade-in .5s forwards;
 }
 
 .introSection h1, h2 {
@@ -13,18 +10,43 @@
 
 .introSection h1 {
   color: var(--color-main);
+  opacity: 0;
+  animation: fade-in .5s forwards;
+  animation-delay: .2s;
 }
 
 .introSection h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fade-in .5s forwards;
+  animation-delay: .4s;
 }
 
 .introSection h2::after {
   content: '';
-  height: .6rem;
+  height: .8rem;
   width: 9rem;
   background-color: var(--color-secondary);
   display: block;
   border-radius: .15rem;
-  margin-top: .7rem;
+  margin-top: 1rem;
+}
+
+.introSection p:not(:first-of-type) {
+  margin-bottom: 3.5rem;
+  max-width: 30rem;
+  opacity: 0;
+  animation: fade-in .5s forwards;
+  animation-delay: .6s;
+}
+
+.introSection a {
+  opacity: 0;
+  animation: fade-in .5s forwards;
+  animation-delay: .8s;
+}
+
+@keyframes fade-in {
+  from { transform: translateY(45px); }
+  to { opacity: initial; transform: translateY(0); }
 }

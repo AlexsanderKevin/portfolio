@@ -4,7 +4,12 @@ import styles from './IntroSection.module.css'
 const IntroSection = () => {
   return (
     <section 
-      className={`container section-container ${styles.introSection}`}
+      className={`
+        container 
+        section-container 
+        fade-in-left
+        ${styles.introSection}
+      `}
     >
       <p><strong>Hi, my name is</strong></p>
       <h1 className='title-main title'>Kevin Alexsander</h1>

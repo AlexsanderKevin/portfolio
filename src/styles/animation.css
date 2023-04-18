@@ -51,12 +51,12 @@
 
 .fade-in-right {
     transform: translateX(3rem);
-    animation: fade-in .7s forwards;
+    animation: fade-in 1s forwards;
 }
 
 .fade-in-left {
     transform: translateX(-3rem);
-    animation: fade-in .7s forwards;
+    animation: fade-in 1s forwards;
 }
 
 @keyframes fade-in {
