@@ -4,7 +4,7 @@ import './styles/global.css'
 
 function App() {
   return (
-    <section>
+    <section className='body'>
       <Header/>
       <IntroSection/>
     </section>

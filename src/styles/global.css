@@ -7,14 +7,28 @@ body {
     --type-main: 'Montserrat Alternates', sans-serif;
     --type-title: 'Alfa Slab One', cursive;
     --color-main: #fff;
-    --color-secondary: #939393;
+    --color-secondary: #acacac;
     --color-bg-1: #0A0819;
     --color-bg-2: #2D2644;
-    --color-emphasys: #AF25D2;
+    --color-emphasys: #A849C0;
 
     font-family: var(--type-main);
     background: linear-gradient(var(--color-bg-1), var(--color-bg-2));
     color: var(--color-secondary);
+}
+
+.body {
+    height: 100vh;
+    overflow: auto;
+}
+
+.body::-webkit-scrollbar {
+    background-color: transparent;
+    width: .65rem;
+}
+.body::-webkit-scrollbar-thumb {
+    border: solid 1px var(--color-secondary);
+    border-radius: 5rem;
 }
 
 strong {
@@ -56,4 +70,5 @@ strong {
 .title-secondary {
     color: transparent;
     -webkit-text-stroke: 2px var(--color-emphasys);
+    /* -webkit-text-stroke: 2px var(--color-main); */
 }
