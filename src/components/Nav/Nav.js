@@ -32,8 +32,6 @@ const Nav = () => {
                     {item.label} 
                 </Anchor>
             ))}
-
-            <button className='button-main fill-bg'> Resume </button>
         </nav>
     )
 }
