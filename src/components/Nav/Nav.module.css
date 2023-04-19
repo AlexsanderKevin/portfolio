@@ -14,3 +14,8 @@
 .navContainer a:global(.active){
     color: var(--color-main)
 }
+
+
+.navContainer a:global(.active)::after {
+    background-color: var(--color-emphasys);
+}

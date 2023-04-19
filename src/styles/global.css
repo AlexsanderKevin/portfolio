@@ -8,10 +8,12 @@ body {
     --type-title: 'Alfa Slab One', cursive;
     --color-main: #fff;
     --color-secondary: #939393;
-    --color-bg: #202020;
+    --color-bg-1: #0A0819;
+    --color-bg-2: #2D2644;
+    --color-emphasys: #AF25D2;
 
     font-family: var(--type-main);
-    background-color: var(--color-bg);
+    background: linear-gradient(var(--color-bg-1), var(--color-bg-2));
     color: var(--color-secondary);
 }
 
@@ -32,9 +34,9 @@ strong {
 }
 
 .button-main {
-  color: var(--color-main);
+  color: var(--color-emphasys);
   font-weight: bold;
-  border: solid 3px var(--color-main);
+  border: solid 3px var(--color-emphasys);
   border-radius: .375rem;
   padding: .7rem 1.5rem;
   cursor: pointer;
@@ -42,7 +44,16 @@ strong {
   position: relative;
 }
 
+.button-main::before {
+    background-color: var(--color-emphasys);
+}
+
 .title {
     font-family: var(--type-title);
     font-weight: normal;
+}
+
+.title-secondary {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--color-emphasys);
 }

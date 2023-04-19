@@ -1,5 +1,5 @@
 .logo {
-    border: solid 3px var(--color-main);
+    border: solid 3px var(--color-emphasys);
     height: 40px;
     width: 40px;
     border-radius: .5rem;
@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    color: var(--color-main);
+    color: var(--color-emphasys);
     cursor: pointer;
     background: none;
     animation: rotate-90 .5s forwards;

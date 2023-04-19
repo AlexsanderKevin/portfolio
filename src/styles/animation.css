@@ -20,7 +20,7 @@
 }
 
 .fill-bg:hover {
-    color: var(--color-bg);
+    color: var(--color-bg-1);
 }
 
 .fill-bg::before {
