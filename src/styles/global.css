@@ -20,7 +20,7 @@ body {
 
 body::after {
     content: '';
-    background-image: url(../assets/stars.png);
+    background-image: url(../assets/img/stars.png);
     top: 0;
     left: 0;
     width: 100%;
