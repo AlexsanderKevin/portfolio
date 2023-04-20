@@ -28,25 +28,26 @@ body::after {
     position: absolute;
     opacity: .5;
     z-index: -1;
-    animation: breathing 2s infinite;
+    animation: breathing 3s infinite;
 }
 
 @keyframes breathing {
-    0% { opacity: .5;}
-    50% { opacity: 1;}
-    100% { opacity: .5;}
+    0% { opacity: .25;}
+    50% { opacity: .7;}
+    100% { opacity: .25;}
 }
 
-.body {
+#body {
     height: 100vh;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 
-.body::-webkit-scrollbar {
+#body::-webkit-scrollbar {
     background-color: transparent;
     width: .65rem;
 }
-.body::-webkit-scrollbar-thumb {
+#body::-webkit-scrollbar-thumb {
     border: solid 1px var(--color-secondary);
     border-radius: 5rem;
 }
