@@ -61,11 +61,13 @@ strong {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 2rem 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .section-container {
     margin-bottom: 40vh;
+    padding-top: 5rem;
 }
 
 .button-main {
@@ -91,5 +93,4 @@ strong {
 .title-secondary {
     color: transparent;
     -webkit-text-stroke: 2px var(--color-emphasys);
-    /* -webkit-text-stroke: 2px var(--color-main); */
 }

@@ -5,6 +5,7 @@ import Resume from '../../assets/Resume.pdf'
 const IntroSection = () => {
   return (
     <section 
+      id='about'
       className={`
         container 
         section-container 

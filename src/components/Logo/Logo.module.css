@@ -10,7 +10,7 @@
     color: var(--color-emphasys);
     cursor: pointer;
     background: none;
-    animation: rotate-90 .5s forwards;
+    animation: rotate-90 1s forwards;
 }
 
 @keyframes rotate-90 {
