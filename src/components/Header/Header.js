@@ -12,7 +12,6 @@ const Header = () => {
         const handleScroll = ({ target }) => {
             setSticked( target.scrollTop >= 60 ? true : false )
             setActive( target.scrollTop < top ? true : false )
-            console.log(active)
             setTop(target.scrollTop)
         }
 
