@@ -19,20 +19,23 @@ const Nav = () => {
     }
 
     return (
-        <nav className={` ${styles.navContainer} fade-in-right `}>
-            { items.map( item => (
-                <Anchor 
-                    id={item.id}
-                    href={item.href} 
-                    key={item.id}
-                    className={ active === item.id ? 'active' : '' }
-                    handleClick={handleClick}
-                    >
-                    
-                    {item.label} 
-                </Anchor>
-            ))}
-        </nav>
+        <>
+            <button className={`${styles.menuButton}`}></button>
+            <nav className={` ${styles.navContainer} fade-in-right `}>
+                { items.map( item => (
+                    <Anchor 
+                        id={item.id}
+                        href={item.href} 
+                        key={item.id}
+                        className={ active === item.id ? 'active' : '' }
+                        handleClick={handleClick}
+                        >
+                        
+                        {item.label} 
+                    </Anchor>
+                ))}
+            </nav>
+        </>
     )
 }
 

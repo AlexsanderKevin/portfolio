@@ -17,6 +17,7 @@ body {
     background: linear-gradient(var(--color-bg-1), var(--color-bg-2));
     color: var(--color-secondary);
     position: relative;
+    overflow: hidden;
 }
 
 body::after {

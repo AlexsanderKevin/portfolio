@@ -29,7 +29,7 @@ const Header = () => {
             `}
         >
             <LogoButton/>
-            <Nav/>
+            <Nav sticked={sticked}/>
         </header>
     )
 }

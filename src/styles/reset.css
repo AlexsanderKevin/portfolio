@@ -1,4 +1,8 @@
 /* CSS Reset */
+*{
+  padding: 0;
+  margin: 0;
+}
 
 /* Reset de margens e preenchimentos */
 body, figure, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dd, ol, ul, figure, pre, hr, fieldset, legend, textarea, input[type="button"], input[type="reset"], input[type="submit"], select, optgroup, option {

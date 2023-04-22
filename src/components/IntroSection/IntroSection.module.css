@@ -57,3 +57,9 @@
 @keyframes fill-bg {
   to { width: 9rem; }
 }
+
+@media (max-width: 40rem) {
+  .introSection {
+    margin-top: 4rem;
+  }
+}
