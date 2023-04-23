@@ -46,11 +46,11 @@
         position: absolute;
         width: 12rem;
         top: 0;
+        height: 100vh;
         right: -21rem;
         align-items: flex-start;
         background-color: var(--color-bg-1-glass);
         backdrop-filter: blur(15px);
-        height: calc(100vh + 4rem);
         padding: 5rem 3rem;
         transition: .3s;
     }

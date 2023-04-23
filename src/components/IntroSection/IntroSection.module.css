@@ -35,7 +35,7 @@
   animation-delay: .8s;
 }
 
-.introSection p:not(:first-of-type) {
+.mainParagraph {
   margin-bottom: 3.5rem;
   max-width: 30rem;
   opacity: 0;
@@ -55,11 +55,21 @@
 }
 
 @keyframes fill-bg {
-  to { width: 9rem; }
+  to { width: 15%; }
 }
 
 @media (max-width: 40rem) {
   .introSection {
     margin-top: 4rem;
+  }
+
+  .introSection h1 {
+    font-size: 2rem;
+  }
+
+  .introSection h2::after {
+    height: .5rem;
+    border-radius: .2rem;
+    margin-top: .5rem;
   }
 }

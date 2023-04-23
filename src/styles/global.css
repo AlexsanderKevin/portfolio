@@ -7,7 +7,7 @@ body {
     --type-main: 'Montserrat Alternates', sans-serif;
     --type-title: 'Alfa Slab One', cursive;
     --color-main: #fff;
-    --color-secondary: #acacac;
+    --color-secondary: #be91ce;
     --color-bg-1: #0A0819;
     --color-bg-1-glass: #0a0819e1;
     --color-bg-2: #2D2644;
@@ -98,4 +98,15 @@ strong {
 .title-secondary {
     color: transparent;
     -webkit-text-stroke: 2px var(--color-emphasys);
+}
+
+@media (max-width: 40rem) {
+    .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
 }
