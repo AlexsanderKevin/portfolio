@@ -3,6 +3,10 @@
 @import url('./reset.css');
 @import url('./animation.css');
 
+html {
+    background: linear-gradient(var(--color-bg-1), var(--color-bg-2));
+}
+
 body {
     --type-main: 'Montserrat Alternates', sans-serif;
     --type-title: 'Alfa Slab One', cursive;
