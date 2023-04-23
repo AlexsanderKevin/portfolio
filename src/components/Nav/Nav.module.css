@@ -44,7 +44,7 @@
     .navContainer {
         flex-direction: column;
         position: absolute;
-        width: 15rem;
+        width: 12rem;
         top: 0;
         right: -21rem;
         align-items: flex-start;
