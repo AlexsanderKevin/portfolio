@@ -2,7 +2,6 @@ import styles from './Nav.module.css'
 import '../../styles/animation.css'
 import Anchor from '../Anchor/Anchor'
 import { useEffect, useState } from 'react'
-import { click } from '@testing-library/user-event/dist/click'
 
 const Nav = () => {
     const [ activeItem, setActiveItem ] = useState(1)
@@ -21,25 +20,21 @@ const Nav = () => {
         setActiveMenu(false)
     }
 
-    const handleClickMenu = event => {
-        setActiveMenu(!activeMenu)
-    }
+    const handleClickMenu = () => { setActiveMenu(!activeMenu) }
 
-    // useEffect(() => {
-    //     const clickOutside = event => {
-    //         if (event.target.getAttribute('id') !== 'nav-menu' || event.target.getAttribute('id') !== 'button-menu') {
-    //             // setActiveMenu(false)
-    //             console.log(event.target)
-    //             console.log(activeMenu)
-    //         }
-    //     }
+    useEffect(() => {
+        const clickOutside = event => {
+            if (event.target.getAttribute('id') !== 'nav-menu' &&  event.target.getAttribute('id') !== 'button-menu') {
+                setActiveMenu(false)
+            }
+        }
 
-    //     if (activeMenu === true) {
-    //         document.addEventListener('click', clickOutside)
-    //     } else {
-    //         document.removeEventListener('click', clickOutside)
-    //     }
-    // }, [ activeMenu ])
+        if (activeMenu === true) {
+            document.addEventListener('click', clickOutside)
+        } else {
+            document.removeEventListener('click', clickOutside)
+        }
+    }, [ activeMenu ])
 
     return (
         <>
