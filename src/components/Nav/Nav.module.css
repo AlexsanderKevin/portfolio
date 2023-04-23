@@ -24,6 +24,8 @@
     cursor: pointer;
     height: 2.5rem;
     width: 2.5rem;
+    transition: .3s;
+    display: none;
 }
 
 .menuButton::after{
@@ -33,8 +35,8 @@
     display: block;
     background-color: var(--color-emphasys);
     box-shadow: 
-        0 .65rem 0 0 var(--color-emphasys),
-        0 -.65rem 0 0 var(--color-emphasys)
+        0 .7rem 0 0 var(--color-emphasys),
+        0 -.7rem 0 0 var(--color-emphasys)
     ;
 }
 
@@ -44,17 +46,25 @@
         position: absolute;
         width: 15rem;
         top: 0;
-        right: 0;
+        right: -21rem;
         align-items: flex-start;
         background-color: var(--color-bg-1-glass);
         backdrop-filter: blur(15px);
         height: calc(100vh + 4rem);
         padding: 5rem 3rem;
-        gap: 3rem;
+        transition: .3s;
+    }
+
+    .navContainer.active {
+        right: 0;
     }
 
     .menuButton {
         display: initial;
         z-index: 1;
+    }
+    .menuButton.active {
+        transform: rotate(90deg);
+        transition: .3s;
     }
 }
