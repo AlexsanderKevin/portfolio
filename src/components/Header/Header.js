@@ -24,8 +24,8 @@ const Header = () => {
             className={` 
                 container 
                 ${styles.header} 
-                ${sticked && styles.sticked}
-                ${active && styles.active}
+                ${sticked ? styles.sticked : ''}
+                ${active ? styles.active : ''}
             `}
         >
             <LogoButton/>

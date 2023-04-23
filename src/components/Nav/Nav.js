@@ -40,12 +40,12 @@ const Nav = () => {
         <>
             <button 
                 id='button-menu'
-                className={`${styles.menuButton} ${activeMenu && styles.active}`}
+                className={`${styles.menuButton} ${activeMenu ? styles.active : ''}`}
                 onClick={handleClickMenu}
             ></button>
             <nav 
                 id='nav-menu'
-                className={` ${styles.navContainer} ${activeMenu && styles.active} fade-in-right `}
+                className={` ${styles.navContainer} ${activeMenu ? styles.active : ''} fade-in-right `}
             >
                 { items.map( item => (
                     <Anchor 

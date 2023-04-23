@@ -46,7 +46,7 @@
         position: absolute;
         width: 12rem;
         top: 0;
-        height: 100vh;
+        height: calc(100vh - 11rem);
         right: -21rem;
         align-items: flex-start;
         background-color: var(--color-bg-1-glass);
