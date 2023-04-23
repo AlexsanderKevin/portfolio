@@ -11,7 +11,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = ({ target }) => {
             setSticked( target.scrollTop >= 60 ? true : false )
-            setActive( target.scrollTop < top ? true : false )
+            setActive( target.scrollTop < (top + 10) ? true : false )
             setTop(target.scrollTop)
         }
 
