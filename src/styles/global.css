@@ -15,7 +15,7 @@ body {
 
     font-family: var(--type-main);
     background-color: var(--color-bg-1);
-    background: linear-gradient(var(--color-bg-1), var(--color-bg-2));
+    background-image: linear-gradient(var(--color-bg-1), var(--color-bg-2));
     color: var(--color-secondary);
     position: relative;
     overflow: hidden;
