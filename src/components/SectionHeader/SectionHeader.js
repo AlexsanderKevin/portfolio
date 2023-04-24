@@ -1,8 +1,15 @@
 import React from 'react'
+import styles from './SectionHeader.module.css'
 
-const SectionHeader = () => {
+const SectionHeader = ({ children, position }) => {
   return (
-    <div>SectionHeader</div>
+    <>
+      <div className={`${styles.headerContainer} ${styles[position]} `}>
+        {position === 'center' || position === 'right' ? <div></div> : null}
+        <h1 className={`title title-secondary`}>{ children }</h1>
+        {position === 'center' || position === 'left' ? <div></div> : null}
+      </div>
+    </>
   )
 }
 
