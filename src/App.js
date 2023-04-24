@@ -1,5 +1,6 @@
 import Header from './components/Header/Header';
 import IntroSection from './components/IntroSection/IntroSection';
+import SkillSection from './components/SkillSection/SkillSection';
 import './styles/global.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <section id='body'>
       <Header/>
       <IntroSection/>
+      <SkillSection/>
     </section>
   );
 }
