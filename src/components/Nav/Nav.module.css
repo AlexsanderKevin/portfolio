@@ -20,26 +20,6 @@
     background-color: var(--color-emphasys);
 }
 
-.menuButton {
-    cursor: pointer;
-    height: 2.5rem;
-    width: 2.5rem;
-    transition: .3s;
-    display: none;
-}
-
-.menuButton::after{
-    content: '';
-    height: 3px;
-    width: 2rem;
-    display: block;
-    background-color: var(--color-emphasys);
-    box-shadow: 
-        0 .7rem 0 0 var(--color-emphasys),
-        0 -.7rem 0 0 var(--color-emphasys)
-    ;
-}
-
 @media (max-width: 40rem) {
     .navContainer {
         flex-direction: column;
@@ -57,14 +37,5 @@
 
     .navContainer.active {
         right: 0;
-    }
-
-    .menuButton {
-        display: initial;
-        z-index: 1;
-    }
-    .menuButton.active {
-        transform: rotate(90deg);
-        transition: .3s;
     }
 }

@@ -2,6 +2,7 @@ import styles from './Nav.module.css'
 import '../../styles/animation.css'
 import Anchor from '../Anchor/Anchor'
 import { useEffect, useState } from 'react'
+import Hamburger from '../Hamburger/Hamburger'
 
 const Nav = () => {
     const [ activeItem, setActiveItem ] = useState(1)
@@ -20,13 +21,12 @@ const Nav = () => {
         setActiveMenu(false)
     }
 
-    const handleClickMenu = () => { setActiveMenu(!activeMenu) }
+    const handleClickMenu = () => { console.log('ala'); setActiveMenu(!activeMenu) }
 
     useEffect(() => {
         const clickOutside = event => {
-            if (event.target.getAttribute('id') !== 'nav-menu' &&  event.target.getAttribute('id') !== 'button-menu') {
-                setActiveMenu(false)
-            }
+            const target = event.target.getAttribute('data-item')
+            if (target !== 'menu') setActiveMenu(false)
         }
 
         if (activeMenu === true) {
@@ -38,13 +38,14 @@ const Nav = () => {
 
     return (
         <>
-            <button 
-                id='button-menu'
-                className={`${styles.menuButton} ${activeMenu ? styles.active : ''}`}
-                onClick={handleClickMenu}
-            ></button>
+            <Hamburger 
+                data-item='menu'
+                handleClick={handleClickMenu} 
+                active={activeMenu ? true : false}
+                className={`fade-in-right ${styles.menuButton}`}
+            />
             <nav 
-                id='nav-menu'
+                data-item='menu'
                 className={` ${styles.navContainer} ${activeMenu ? styles.active : ''} fade-in-right `}
             >
                 { items.map( item => (
