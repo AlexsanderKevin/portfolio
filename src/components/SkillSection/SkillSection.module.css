@@ -1,0 +1,40 @@
+.skillContainer {
+  display: flex; 
+  justify-content: center;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 6rem);
+  grid-template-rows: repeat(3, 6rem);
+  gap: 1rem;
+}
+
+.skillGrid .skill {
+  background-color: var(--color-bg-1-glass);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.skillGrid .skill.javascript,
+.skillGrid .skill.css
+{
+  display: none;
+  transition: .3s;
+}
+
+.skillGrid .skill.javascript.active {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  display: flex;
+}
+
+.skillGrid .skill.css.active {
+  grid-column: 4/6;
+  grid-row: 1/3;
+  display: flex;
+}
