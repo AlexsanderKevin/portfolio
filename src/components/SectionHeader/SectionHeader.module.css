@@ -32,4 +32,8 @@
   .headerContainer h1 {
     font-size: 1.5rem;
   }
+
+  .headerContainer {
+    margin-bottom: 2rem;
+  }
 }
