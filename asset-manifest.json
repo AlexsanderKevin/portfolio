@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c285dcfa.css",
-    "main.js": "/portfolio/static/js/main.e324e237.js",
+    "main.css": "/portfolio/static/css/main.96472013.css",
+    "main.js": "/portfolio/static/js/main.f17753df.js",
     "static/media/stars.png": "/portfolio/static/media/stars.001c5ace369bc2f07b67.png",
     "static/media/Resume.pdf": "/portfolio/static/media/Resume.6db6cc37cc5aeab29020.pdf",
+    "static/media/icon-jquery.svg": "/portfolio/static/media/icon-jquery.a058ac3a5201d280b8fbfe0712d99fee.svg",
+    "static/media/icon-react.svg": "/portfolio/static/media/icon-react.908049305b9e3b9400a8d85e0b100ce9.svg",
+    "static/media/icon-node.svg": "/portfolio/static/media/icon-node.1bfbf9a7b1cc01b5d0610eed7414c19f.svg",
+    "static/media/icon-typescript.svg": "/portfolio/static/media/icon-typescript.76dda5ff7c31de9cf14b8341faee2fd7.svg",
+    "static/media/icon-express.svg": "/portfolio/static/media/icon-express.0534e4155a6fc97d3d4e6a38a6cbc81c.svg",
+    "static/media/icon-sequelize.svg": "/portfolio/static/media/icon-sequelize.e19c85276011ca2b3c4fecf52a1156ce.svg",
+    "static/media/icon-javascript.svg": "/portfolio/static/media/icon-javascript.491a358722d13d9db23ecbaf17c3b7cc.svg",
+    "static/media/icon-npm.svg": "/portfolio/static/media/icon-npm.dd30d1dd42b6ced10a3bcbd608508c67.svg",
     "index.html": "/portfolio/index.html",
-    "main.c285dcfa.css.map": "/portfolio/static/css/main.c285dcfa.css.map",
-    "main.e324e237.js.map": "/portfolio/static/js/main.e324e237.js.map"
+    "static/media/icon-next.svg": "/portfolio/static/media/icon-next.189c02fccd7078348aadae0f7735e6ec.svg",
+    "main.96472013.css.map": "/portfolio/static/css/main.96472013.css.map",
+    "main.f17753df.js.map": "/portfolio/static/js/main.f17753df.js.map"
   },
   "entrypoints": [
-    "static/css/main.c285dcfa.css",
-    "static/js/main.e324e237.js"
+    "static/css/main.96472013.css",
+    "static/js/main.f17753df.js"
   ]
 }
