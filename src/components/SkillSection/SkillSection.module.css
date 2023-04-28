@@ -73,6 +73,7 @@
 
 .cssGrid .skill {
   background-color: #71C3FF;
+  cursor: pointer;
 }
 
 .cssGrid .skill:first-of-type {
@@ -87,24 +88,26 @@
 
 @media (max-width: 40rem) {
   .skillGrid {
-    grid-template-columns: repeat(3, 5rem);
-    grid-template-rows: repeat(5, 5rem);
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(5, 6rem);
+    background-color: #BE91CE;
+    border-radius: .5rem;
   }
 
   .javascriptGrid {
-    grid-template-columns: repeat(3, 5rem);
-    grid-template-rows: repeat(3, 5rem);
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
   }
 
   .skillGrid,
   .javascriptGrid,
   .cssGrid {
-    gap: .5rem;
+    gap: 0;
   }
 
   .cssGrid {
-    grid-template-columns: repeat(2, 5rem);
-    grid-template-rows: repeat(2, 5rem);
+    grid-template-columns: repeat(2, 6rem);
+    grid-template-rows: repeat(2, 6rem);
     grid-column: 1/3;
     grid-row: 4/6;
   }

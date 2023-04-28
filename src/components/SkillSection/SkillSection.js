@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import SectionHeader from '../SectionHeader/SectionHeader'
 import styles from './SkillSection.module.css'
-import skills from './Skills'
 import { ReactComponent as IconJavascript } from '../../assets/svg/icon-javascript.svg'
 import { ReactComponent as IconNode } from '../../assets/svg/icon-node.svg'
 import { ReactComponent as IconExpress } from '../../assets/svg/icon-express.svg'
@@ -11,12 +10,12 @@ import { ReactComponent as IconNpm } from '../../assets/svg/icon-npm.svg'
 import { ReactComponent as IconJquery } from '../../assets/svg/icon-jquery.svg'
 import { ReactComponent as IconTypescript } from '../../assets/svg/icon-typescript.svg'
 import { ReactComponent as IconNext } from '../../assets/svg/icon-next.svg'
-
-const _skills = {
-  javascript: [ 'JavaScript', 'Node', 'Express', 'React', 'Sequelize', 'NPM', 'JQuery', 'TypeScript', 'Next' ],
-  css: [ 'CSS', 'Bootstrap', 'SASS', 'Tailwind' ],
-  other: [ 'html', 'GIT' ]
-}
+import { ReactComponent as IconCss } from '../../assets/svg/icon-css.svg'
+import { ReactComponent as IconBootstrap } from '../../assets/svg/icon-bootstrap.svg'
+import { ReactComponent as IconSass } from '../../assets/svg/icon-sass.svg'
+import { ReactComponent as IconTailwind } from '../../assets/svg/icon-tailwind.svg'
+import { ReactComponent as IconHtml } from '../../assets/svg/icon-html.svg'
+import { ReactComponent as IconGit } from '../../assets/svg/icon-git.svg'
 
 const SkillSection = () => {
   const [ activeJs, setActiveJs ] = useState(true)
@@ -42,20 +41,14 @@ const SkillSection = () => {
           </div>
 
           <div className={`${styles.cssGrid} ${activeCss ? styles.active : ''}`}>
-            {/* {skills.css.map( (skill, index) => (
-              <div 
-                onClick={index === 0 ? () => setActiveCss(!activeCss) : null}
-                className={`${styles.skill}`} 
-                key={skill}
-              >{ skill }</div>
-            ))} */}
+            <div className='skill' onClick={() => setActiveCss(!activeCss)}><IconCss height={'6rem'} width={'6rem'}/></div>
+            <div className='skill'><IconBootstrap height={'6rem'} width={'6rem'}/></div>
+            <div className='skill'><IconSass height={'6rem'} width={'6rem'}/></div>
+            <div className='skill'><IconTailwind height={'6rem'} width={'6rem'}/></div>
           </div>
 
-          {/* {skills.other.map( skill => {
-            return(
-              <div className={`${styles.skill}`} style={{backgroundColor: '#FF8058'}} key={skill}>{ skill }</div>
-            )
-          })} */}
+          <div className='skill'><IconHtml height={'6rem'} width={'6rem'}/></div>
+          <div className='skill'><IconGit height={'6rem'} width={'6rem'}/></div>
         </div>
       </div>
     </section>
