@@ -50,4 +50,7 @@
   .planet {
     right: -7rem;
   }
+  .wave {
+    top: 90vh;
+  }
 }
