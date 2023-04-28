@@ -1,0 +1,53 @@
+.planet {
+    position: absolute;
+    /* background-color: var(--color-emphasys); */
+    background-image: linear-gradient(to bottom right, #8C10D8, #00000000 );
+    height: 20rem;
+    width: 20rem;
+    top: -5rem;
+    right: 10vw;
+    border-radius: 50%;
+    z-index: -100;
+    opacity: .25;
+}
+
+.wave {
+    width: 140vw;
+    height: 140vw;
+    border-radius: 50vw;
+    background-color: #8C10D8;
+    position: absolute;
+    top: 100vh;
+    z-index: -100;
+    animation: rotation 30s linear infinite;
+    opacity: .1;
+}
+
+.wave1 {
+    left: -50vw;
+}
+
+.wave2 {
+    left: 0vw;
+    animation-duration: 35s;
+}
+
+.wave3 {
+    left: 50vw;
+    animation-duration: 40s;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 40rem) {
+  .planet {
+    right: -7rem;
+  }
+}

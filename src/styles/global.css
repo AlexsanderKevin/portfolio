@@ -8,9 +8,9 @@ body {
     --type-title: 'Alfa Slab One', cursive;
     --color-main: #fff;
     --color-secondary: #be91ce;
-    --color-bg-1: #0A0819;
+    --color-bg-1: #100B21;
     --color-bg-1-glass: #0a0819e1;
-    --color-bg-2: #2D2644;
+    --color-bg-2: #291745;
     --color-bg-2-glass: #2d2644de;
     --color-emphasys: #A849C0;
 
@@ -24,7 +24,6 @@ body {
 
 body::after {
     content: '';
-    background-image: url(../assets/img/stars.png);
     top: 0;
     left: 0;
     width: 100%;
@@ -40,7 +39,6 @@ body::after {
     50% { opacity: .7;}
     100% { opacity: .25;}
 }
-
 #body {
     height: 100vh;
     overflow: auto;
