@@ -41,7 +41,7 @@ const SkillSection = () => {
           </div>
 
           <div className={`${styles.cssGrid} ${activeCss ? styles.active : ''}`}>
-            <div className='skill' onClick={() => setActiveCss(!activeCss)}><IconCss height={'6rem'} width={'6rem'}/></div>
+            <div className='skill'><IconCss height={'6rem'} width={'6rem'}/></div>
             <div className='skill'><IconBootstrap height={'6rem'} width={'6rem'}/></div>
             <div className='skill'><IconSass height={'6rem'} width={'6rem'}/></div>
             <div className='skill'><IconTailwind height={'6rem'} width={'6rem'}/></div>
@@ -49,6 +49,7 @@ const SkillSection = () => {
 
           <div className='skill'><IconHtml height={'6rem'} width={'6rem'}/></div>
           <div className='skill'><IconGit height={'6rem'} width={'6rem'}/></div>
+
         </div>
       </div>
     </section>
