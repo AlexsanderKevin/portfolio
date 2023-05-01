@@ -70,6 +70,17 @@ strong {
     padding-left: 3rem;
 }
 
+.grid-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    display: grid;
+    grid-template-columns: repeat(12, 5.5rem);
+    gap: .1rem;
+}
+
 .section-container {
     margin-bottom: 40vh;
     padding-top: 5rem;

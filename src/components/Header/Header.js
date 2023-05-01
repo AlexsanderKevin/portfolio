@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <header 
             className={` 
-                container 
+                grid-container
                 ${styles.header} 
                 ${sticked ? styles.sticked : ''}
                 ${active ? styles.active : ''}

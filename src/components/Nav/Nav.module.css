@@ -2,6 +2,8 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    grid-column: 7/13;
+    justify-content: flex-end;
 }
 
 .navContainer a {
