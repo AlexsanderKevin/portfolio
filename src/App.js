@@ -6,7 +6,7 @@ import './styles/global.css'
 
 function App() {
   return (
-    <section id='body'>
+    <section id='body' className='container'>
       <BackgroundIlustration/>
       <Header/>
       <IntroSection/>

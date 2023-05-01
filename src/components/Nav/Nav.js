@@ -9,11 +9,12 @@ const Nav = () => {
     const [ activeMenu, setActiveMenu ] = useState(false)
 
     const items = [
-        { id: 1, label: 'About', href: '#about' },
+        { id: 1, label: 'Home', href: '#home' },
         { id: 2, label: 'Skills', href: '#skills' },
-        { id: 3, label: 'Experience', href: '#experience' },
-        { id: 4, label: 'Work', href: '#work' },
-        { id: 5, label: 'Contact', href: '#contact' },
+        { id: 3, label: 'About', href: '#about' },
+        { id: 4, label: 'Experience', href: '#experience' },
+        { id: 5, label: 'Work', href: '#work' },
+        { id: 6, label: 'Contact', href: '#contact' },
     ]
 
     const handleClickItem = event => {

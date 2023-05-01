@@ -1,3 +1,14 @@
+.infoCard {
+  grid-column: 7/13;
+}
+
+.svgContainer {
+  grid-column: 1/7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .introSection p:first-of-type {
   margin-bottom: 1.5rem;
   opacity: 0;
@@ -5,7 +16,7 @@
 }
 
 .introSection h1, h2 {
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 
 .introSection h1 {
@@ -24,12 +35,12 @@
 
 .introSection h2::after {
   content: '';
-  height: .8rem;
+  height: .5rem;
   background: none;
   border: solid 2px var(--color-emphasys);
   display: block;
   border-radius: .4rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
   width: 0;
   animation: fill-bg .5s forwards;
   animation-delay: .8s;
@@ -59,6 +70,10 @@
 }
 
 @media (max-width: 40rem) {
+  .infoCard {
+    grid-column: 1/7;
+  }
+
   .introSection {
     margin-top: 4rem;
   }
