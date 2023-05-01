@@ -40,11 +40,13 @@
 .wave2 {
     left: 0vw;
     animation-duration: 35s;
+    animation-delay: 1s;
 }
 
 .wave3 {
     left: 50vw;
     animation-duration: 40s;
+    animation-delay: 2s;
 }
 
 @keyframes rotation {
@@ -59,8 +61,5 @@
 @media (max-width: 40rem) {
   .planet {
     right: -7rem;
-  }
-  .wave {
-    top: 90vh;
   }
 }

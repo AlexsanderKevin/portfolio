@@ -21,12 +21,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* #body {
-    height: 100vh;
-    overflow: auto;
-}
-
-} */
 body::-webkit-scrollbar {
     background-image: linear-gradient(var(--color-bg-1), var(--color-bg-2));
     width: .65rem;
@@ -53,6 +47,7 @@ strong {
 }
 
 .grid-container {
+    max-width: 83rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
@@ -92,6 +87,10 @@ strong {
     .container {
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+
+    .section-container {
+        padding-top: 1rem;
     }
 
     .grid-container {
