@@ -73,6 +73,10 @@
 }
 
 @media (max-width: 40rem) {
+  .svgContainer {
+    transform: translateY(-5rem);
+  }
+
   .infoCard {
     grid-column: 1/7;
   }
@@ -81,8 +85,21 @@
     margin-top: 4rem;
   }
 
+  .introSection p:first-of-type {
+    margin-bottom: .5rem;
+  }
+
   .introSection h1 {
     font-size: 2rem;
+  }
+
+  .introSection h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .mainParagraph {
+    margin-bottom: 2.5rem;
+
   }
 
   .introSection h2::after {
@@ -94,6 +111,6 @@
   .infoCard {
     padding: 1rem 1rem 2rem 1rem;
     position: absolute;
-    top: 25rem;
+    top: 40vh;
   }
 }
