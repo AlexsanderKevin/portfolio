@@ -22,7 +22,7 @@ const Nav = () => {
         setActiveMenu(false)
     }
 
-    const handleClickMenu = () => { console.log('ala'); setActiveMenu(!activeMenu) }
+    const handleClickMenu = () => { setActiveMenu(!activeMenu) }
 
     useEffect(() => {
         const clickOutside = event => {

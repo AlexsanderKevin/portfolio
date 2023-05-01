@@ -42,8 +42,6 @@ strong {
     max-width: 83rem;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 3rem;
-    padding-left: 3rem;
 }
 
 .grid-container {
@@ -51,6 +49,8 @@ strong {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .section-container {
@@ -84,17 +84,14 @@ strong {
 }
 
 @media (max-width: 40rem) {
-    .container {
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
         padding-right: 1rem;
         padding-left: 1rem;
     }
 
     .section-container {
         padding-top: 1rem;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(6, 1fr);
     }
 
     .title {

@@ -9,14 +9,13 @@ const Header = () => {
     const [ top, setTop ] = useState(0)
 
     useEffect(() => {
-        const handleScroll = ({ target }) => {
-            setSticked( target.scrollTop >= 60 ? true : false )
-            setActive( target.scrollTop < top ? true : false )
-            setTop(target.scrollTop)
+        const handleScroll = () => {
+            setSticked( window.scrollY >= 60 ? true : false )
+            setActive( window.scrollY < top ? true : false )
+            setTop( window.scrollY )
         }
 
-        const body = document.querySelector('#body')
-        body.addEventListener('scroll', handleScroll)
+        document.addEventListener('scroll', handleScroll)
     }, [ top ])
 
     return (

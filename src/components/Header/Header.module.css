@@ -20,11 +20,6 @@
 }
 
 @media (max-width: 40rem) {
-    /* .header {
-        position: absolute;
-        left: 0;
-        right: 0;
-    } */
     .sticked {
         margin-top: 0;
     }
