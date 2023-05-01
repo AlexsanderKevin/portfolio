@@ -34,17 +34,17 @@
 }
 
 .wave1 {
-    left: -50vw;
+    left: -70vw;
 }
 
 .wave2 {
-    left: 0vw;
+    left: -20vw;
     animation-duration: 35s;
     animation-delay: 2s;
 }
 
 .wave3 {
-    left: 50vw;
+    left: 30vw;
     animation-duration: 25s;
     animation-delay: 3s;
 }

@@ -3,6 +3,10 @@
 @import url('./reset.css');
 @import url('./animation.css');
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     --type-main: 'Montserrat Alternates', sans-serif;
     --type-title: 'Alfa Slab One', cursive;
