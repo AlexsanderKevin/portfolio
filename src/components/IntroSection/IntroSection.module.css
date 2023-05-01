@@ -1,5 +1,8 @@
 .infoCard {
   grid-column: 7/13;
+  padding: 2rem 2rem 3rem 2rem;
+  align-self: center;
+  border-radius: .5rem;
 }
 
 .svgContainer {
@@ -15,7 +18,7 @@
   animation: fade-in .5s forwards;
 }
 
-.introSection h1, h2 {
+.introSection h1 {
   font-size: 2rem;
 }
 
@@ -31,6 +34,7 @@
   opacity: 0;
   animation: fade-in .5s forwards;
   animation-delay: .4s;
+  font-size: 1.8rem;
 }
 
 .introSection h2::after {
@@ -48,7 +52,6 @@
 
 .mainParagraph {
   margin-bottom: 3.5rem;
-  max-width: 30rem;
   opacity: 0;
   animation: fade-in .5s forwards;
   animation-delay: .6s;
@@ -86,5 +89,11 @@
     height: .5rem;
     border-radius: .2rem;
     margin-top: .5rem;
+  }
+
+  .infoCard {
+    padding: 1rem 1rem 2rem 1rem;
+    position: absolute;
+    top: 25rem;
   }
 }
