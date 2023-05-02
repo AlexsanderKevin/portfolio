@@ -12,6 +12,16 @@
   align-items: center;
 }
 
+.svgContainer svg{
+  animation: move-svg 5s linear infinite;
+}
+
+@keyframes move-svg {
+  0% { transform: translateY(-1rem); }
+  50% { transform: translateY(0rem); }
+  100% { transform: translateY(-1rem); }
+}
+
 .introSection p:first-of-type {
   margin-bottom: 1.5rem;
   opacity: 0;
