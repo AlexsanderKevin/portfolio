@@ -40,12 +40,16 @@ const Nav = () => {
 
     useEffect(() => {
         const handleScroll = (array) => {
-            console.log(window.scrollY)
-            array.forEach((item, index) => {
-                if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
-                    setActiveItem(index)
-                }
-            });
+            let timer
+            if (timer) clearTimeout(timer)
+            timer = setTimeout(() => {
+                array.forEach((item, index) => {
+                    if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
+                        setActiveItem(index)
+                    }
+                })
+                timer = null
+            }, 500)
         }
 
         document.addEventListener('scroll', () => handleScroll(items))
