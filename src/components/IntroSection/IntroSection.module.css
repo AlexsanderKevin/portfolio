@@ -19,6 +19,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: svg-enter .5s forwards;
+}
+
+@keyframes svg-enter {
+  from { transform: translateX(-20rem); }
+  to { transform: translateX(0);}
 }
 
 .svgContainer svg{

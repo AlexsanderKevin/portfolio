@@ -10,7 +10,6 @@ const IntroSection = () => {
       className={`
         grid-container 
         section-container 
-        fade-in-left
         ${styles.introSection}
       `}
     >
