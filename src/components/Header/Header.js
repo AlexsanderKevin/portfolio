@@ -1,22 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import LogoButton from '../Logo/LogoButton'
 import Nav from '../Nav/Nav'
 import styles from './Header.module.css'
+import { GlobalContext } from '../../GlobalContext'
 
 const Header = () => {
     const [ sticked, setSticked ] = useState(false)
-    const [ active, setActive ] = useState(false)
-    const [ top, setTop ] = useState(0)
+    const storage = useContext(GlobalContext)
 
     useEffect(() => {
-        const handleScroll = () => {
-            setSticked( window.scrollY >= 60 ? true : false )
-            setActive( window.scrollY < top ? true : false )
-            setTop( window.scrollY )
-        }
-
-        document.addEventListener('scroll', handleScroll)
-    }, [ top ])
+        setSticked( storage.top >= 60 ? true : false )
+    }, [ storage.top ])
 
     return (
         <header 
@@ -24,7 +18,7 @@ const Header = () => {
                 grid-container
                 ${styles.header} 
                 ${sticked ? styles.sticked : ''}
-                ${active ? styles.active : ''}
+                ${storage.header ? styles.active : ''}
             `}
         >
             <LogoButton/>

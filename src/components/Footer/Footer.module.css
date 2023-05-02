@@ -1,0 +1,17 @@
+.mainFooter {
+  height: 8rem;
+  border-top: solid 1px var(--color-emphasys);
+  animation: footer-entry .5s forwards;
+}
+
+.mainFooter p{
+  grid-column: 1/13; 
+  text-align: center;
+  text-justify: center;
+  margin: auto
+}
+
+@keyframes footer-entry {
+  from { transform: translateY(8rem);}
+  to { transform: 0;}
+}

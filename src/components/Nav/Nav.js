@@ -1,12 +1,14 @@
 import styles from './Nav.module.css'
 import '../../styles/animation.css'
 import Anchor from '../Anchor/Anchor'
-import { useEffect, useMemo, useState } from 'react'
+import { useContext, useEffect, useMemo, useState } from 'react'
 import Hamburger from '../Hamburger/Hamburger'
+import { GlobalContext } from '../../GlobalContext'
 
 const Nav = () => {
     const [ activeItem, setActiveItem ] = useState(0)
     const [ activeMenu, setActiveMenu ] = useState(false)
+    const storage = useContext(GlobalContext)
 
     const items = useMemo(() => ([
         { id: 0, label: 'Home', href: '#home', topRange: [0, 700] },
@@ -39,21 +41,21 @@ const Nav = () => {
     }, [ activeMenu ])
 
     useEffect(() => {
-        const handleScroll = (array) => {
-            let timer
-            if (timer) clearTimeout(timer)
-            timer = setTimeout(() => {
-                array.forEach((item, index) => {
-                    if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
-                        setActiveItem(index)
-                    }
-                })
-                timer = null
-            }, 500)
-        }
+        // const handleScroll = (array) => {
+            // let timer
+            // if (timer) clearTimeout(timer)
+            // timer = setTimeout(() => {
+            //     array.forEach((item, index) => {
+            //         if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
+            //             setActiveItem(index)
+            //         }
+            //     })
+            //     timer = null
+            // }, 500)
+        // }
 
-        document.addEventListener('scroll', () => handleScroll(items))
-    }, [items])
+        // document.addEventListener('scroll', () => handleScroll(items))
+    }, [items, storage.top])
 
     return (
         <>
