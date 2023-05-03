@@ -1,14 +1,15 @@
-.mainFooter {
+.footer {
   height: 8rem;
   border-top: solid 1px var(--color-emphasys);
   animation: footer-entry .5s forwards;
 }
 
-.mainFooter p{
+.footer p{
   grid-column: 1/13; 
   text-align: center;
   text-justify: center;
-  margin: auto
+  margin: auto;
+  font-size: .875rem;
 }
 
 @keyframes footer-entry {

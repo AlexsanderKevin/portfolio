@@ -6,7 +6,7 @@ const Footer = () => {
     <footer
       className={`
         grid-container
-        ${styles.mainFooter}
+        ${styles.footer}
       `}
     >
       <p>Designed, Developed and Illustrated by Kevin Alexsander de Jesus.

@@ -96,9 +96,9 @@
 }
 
 @media (max-width: 40rem) {
-  .svgContainer {
-    transform: translateY(-5rem);
-  }
+  /* .svgContainer {
+    transform: translateY(-100rem);
+  } */
 
   .infoCard {
     grid-column: 1/7;
@@ -113,11 +113,11 @@
   }
 
   .introSection h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .introSection h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
   }
 
   .mainParagraph {
@@ -133,7 +133,5 @@
 
   .infoCard {
     padding: 1rem 1rem 2rem 1rem;
-    position: absolute;
-    top: 40vh;
   }
 }

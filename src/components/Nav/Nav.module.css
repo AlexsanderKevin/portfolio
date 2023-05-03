@@ -31,11 +31,12 @@
         height: calc(100vh - 10rem);
         right: -21rem;
         align-items: flex-start;
-        background-color: var(--color-bg-1-glass);
+        background-color: var(--color-bg-1);
         backdrop-filter: blur(15px);
         padding: 5rem 3rem;
         transition: .3s;
         justify-content: flex-start;
+        gap: 2.5rem;
     }
 
     .navContainer.active {
