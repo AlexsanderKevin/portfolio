@@ -41,20 +41,16 @@ const Nav = () => {
     }, [ activeMenu ])
 
     useEffect(() => {
-        // const handleScroll = (array) => {
-            // let timer
-            // if (timer) clearTimeout(timer)
-            // timer = setTimeout(() => {
-            //     array.forEach((item, index) => {
-            //         if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
-            //             setActiveItem(index)
-            //         }
-            //     })
-            //     timer = null
-            // }, 500)
-        // }
-
-        // document.addEventListener('scroll', () => handleScroll(items))
+        let timer
+        if (timer) clearTimeout(timer)
+        timer = setTimeout(() => {
+            items.forEach((item, index) => {
+                if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
+                    setActiveItem(index)
+                }
+            })
+            timer = null
+        }, 500)
     }, [items, storage.top])
 
     return (
