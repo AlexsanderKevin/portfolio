@@ -59,11 +59,11 @@ const Nav = () => {
                 data-item='menu'
                 handleClick={handleClickMenu} 
                 active={activeMenu ? true : false}
-                className={`fade-in-right ${styles.menuButton}`}
+                className={`${styles.menuButton}`}
             />
             <nav 
                 data-item='menu'
-                className={` ${styles.navContainer} ${activeMenu ? styles.active : ''} fade-in-right `}
+                className={` ${styles.navContainer} ${activeMenu ? styles.active : ''}`}
             >
                 { items.map( item => (
                     <Anchor 

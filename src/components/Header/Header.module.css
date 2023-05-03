@@ -4,6 +4,13 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    animation: slide-in .3s forwards;
+    animation-delay: .3s;
+    transform: translateY(-5rem);
+}
+
+@keyframes slide-in {
+    to { transform: translatey(0);}
 }
 
 .sticked {
