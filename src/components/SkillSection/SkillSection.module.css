@@ -12,9 +12,8 @@
   color: var(--color-bg-1);
 }
 
-.skillGrid .skill {
-  background-color: var(--color-bg-1-glass);
-  backdrop-filter: blur(15px);
+.skill {
+  background: #BE91CE;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +36,7 @@
 }
 
 .javascriptGrid .skill {
-  background-color: #F3D950;
+  /* background-color: #F3D950; */
 }
 
 .javascriptGrid .skill:first-of-type {
@@ -72,7 +71,7 @@
 }
 
 .cssGrid .skill {
-  background-color: #71C3FF;
+  /* background-color: #71C3FF; */
   cursor: pointer;
 }
 

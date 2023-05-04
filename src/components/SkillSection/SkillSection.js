@@ -18,8 +18,8 @@ import { ReactComponent as IconHtml } from '../../assets/svg/icon-html.svg'
 import { ReactComponent as IconGit } from '../../assets/svg/icon-git.svg'
 
 const SkillSection = () => {
-  const [ activeJs, setActiveJs ] = useState(true)
-  const [ activeCss, setActiveCss ] = useState(true)
+  const [ activeJs, setActiveJs ] = useState(false)
+  const [ activeCss, setActiveCss ] = useState(false)
 
   return (
     <section id='skills' className={`container section-container fade-in-left ${styles.skillSection}`}>
@@ -29,26 +29,26 @@ const SkillSection = () => {
         <div className={`${styles.skillGrid}`}>
 
           <div className={`${styles.javascriptGrid} ${activeJs ? styles.active : ''}`}>
-            <div className='skill'><IconJavascript height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconNode height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconExpress height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconReact height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconSequelize height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconNpm height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconJquery height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconTypescript height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconNext height={'6rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconJavascript height={'4.5rem'} width={'5rem'}/></div>
+            <div className={styles.skill}><IconNode height={'5rem'} width={'5rem'}/></div>
+            <div className={styles.skill}><IconExpress height={'4.8rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconReact height={'5rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconSequelize height={'5rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconNpm height={'4.2rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconJquery height={'4.5rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconTypescript height={'4.2rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconNext height={'4.8rem'} width={'6rem'}/></div>
           </div>
 
           <div className={`${styles.cssGrid} ${activeCss ? styles.active : ''}`}>
-            <div className='skill'><IconCss height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconBootstrap height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconSass height={'6rem'} width={'6rem'}/></div>
-            <div className='skill'><IconTailwind height={'6rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconCss height={'4.5rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconBootstrap height={'4rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconSass height={'4.8rem'} width={'6rem'}/></div>
+            <div className={styles.skill}><IconTailwind height={'4.5rem'} width={'5rem'}/></div>
           </div>
 
-          <div className='skill'><IconHtml height={'6rem'} width={'6rem'}/></div>
-          <div className='skill'><IconGit height={'6rem'} width={'6rem'}/></div>
+          <div className={styles.skill}><IconHtml height={'4.5rem'} width={'6rem'}/></div>
+          <div className={styles.skill}><IconGit height={'4.8rem'} width={'6rem'}/></div>
 
         </div>
       </div>
