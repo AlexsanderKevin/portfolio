@@ -12,8 +12,8 @@ const Nav = () => {
     const storage = useContext(GlobalContext)
 
     const items = useMemo(() => ([
-        { id: 0, label: 'Home', href: '#home', topRange: [0, 700] },
-        { id: 1, label: 'Skills', href: '#skills', topRange: [700, 1400] },
+        { id: 0, label: 'Home', href: '#home' },
+        { id: 1, label: 'Skills', href: '#skills' },
         { id: 2, label: 'About', href: '#about' },
         { id: 3, label: 'Experience', href: '#experience' },
         { id: 4, label: 'Work', href: '#work' },
@@ -41,14 +41,7 @@ const Nav = () => {
 
     }, [ activeMenu ])
 
-    useEffect(() => {
-        console.log('ala')
-        items.forEach((item, index) => {
-            if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
-                setActiveItem(index)
-            }
-        })
-    }, [items, storage.top])
+    useEffect(() => setActiveItem(storage.section), [storage.section])
 
     return (
         <>
