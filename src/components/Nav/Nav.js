@@ -4,7 +4,6 @@ import Anchor from '../Anchor/Anchor'
 import { useContext, useEffect, useMemo, useState } from 'react'
 import Hamburger from '../Hamburger/Hamburger'
 import { GlobalContext } from '../../GlobalContext'
-import debounce from '../../helper/Debounce'
 
 const Nav = () => {
     const [ activeItem, setActiveItem ] = useState(0)
