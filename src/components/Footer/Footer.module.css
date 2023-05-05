@@ -2,6 +2,13 @@
   height: 8rem;
   border-top: solid 1px var(--color-emphasys);
   animation: footer-entry .5s forwards;
+  opacity: 0;
+  transition: .5s;
+}
+
+.footer.active {
+  opacity: 1;
+  transition: .5s;
 }
 
 .footer p{
@@ -10,9 +17,4 @@
   text-justify: center;
   margin: auto;
   font-size: .875rem;
-}
-
-@keyframes footer-entry {
-  from { transform: translateY(8rem);}
-  to { transform: 0;}
 }

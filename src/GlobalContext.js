@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useEffect, useState } from 'react'
+import React, { createContext,  useEffect, useState } from 'react'
 import debounce from './helper/Debounce'
 
 export const GlobalContext = createContext()
@@ -17,6 +17,11 @@ export const GlobalStorage = ({children}) => {
   useEffect(() => {
     if (top < 700) setSection(0)
     else if (top < 1400) setSection(1)
+
+    const pageHeight = document.documentElement.scrollHeight
+    const windowHeight = window.innerHeight
+    setFooter((top + windowHeight) >= pageHeight )
+    
   }, [top])
 
   return (
