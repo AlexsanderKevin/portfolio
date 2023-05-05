@@ -1,4 +1,5 @@
 import React, { createContext, useCallback, useEffect, useState } from 'react'
+import debounce from './helper/Debounce'
 
 export const GlobalContext = createContext()
 
@@ -8,7 +9,9 @@ export const GlobalStorage = ({children}) => {
   const [ footer, setFooter ] = useState(false)
 
   useEffect(() => {
-    document.addEventListener('scroll', () => {setTop(window.scrollY)})
+    const debounceSetTop = debounce(() => {setTop(window.scrollY)}, 50)
+
+    document.addEventListener('scroll', debounceSetTop)
   }, [])
 
   return (

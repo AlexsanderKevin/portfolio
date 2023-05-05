@@ -4,6 +4,7 @@ import Anchor from '../Anchor/Anchor'
 import { useContext, useEffect, useMemo, useState } from 'react'
 import Hamburger from '../Hamburger/Hamburger'
 import { GlobalContext } from '../../GlobalContext'
+import debounce from '../../helper/Debounce'
 
 const Nav = () => {
     const [ activeItem, setActiveItem ] = useState(0)
@@ -41,16 +42,12 @@ const Nav = () => {
     }, [ activeMenu ])
 
     useEffect(() => {
-        let timer
-        if (timer) clearTimeout(timer)
-        timer = setTimeout(() => {
-            items.forEach((item, index) => {
-                if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
-                    setActiveItem(index)
-                }
-            })
-            timer = null
-        }, 500)
+        console.log('ala')
+        items.forEach((item, index) => {
+            if (item.topRange && window.scrollY >= item.topRange[0] && window.scrollY <= item.topRange[1]) {
+                setActiveItem(index)
+            }
+        })
     }, [items, storage.top])
 
     return (
