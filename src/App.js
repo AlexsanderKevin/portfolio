@@ -1,5 +1,5 @@
 import { GlobalStorage } from './GlobalContext';
-import BackgroundIlustration from './components/BackgroundIlustration/BackgroundIlustration';
+import Background from './components/Background/Background';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import IntroSection from './components/IntroSection/IntroSection';
@@ -10,7 +10,7 @@ function App() {
   return (
     <GlobalStorage>
     <section id='body' className='container'>
-      <BackgroundIlustration/>
+      <Background/>
       <Header/>
       <IntroSection/>
       <SkillSection/>

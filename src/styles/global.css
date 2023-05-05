@@ -22,7 +22,6 @@ body {
     background-color: var(--color-bg-1);
     color: var(--color-secondary);
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {

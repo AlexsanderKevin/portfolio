@@ -1,6 +1,6 @@
-import styles from './BackgroundIlustration.module.css'
+import styles from './Bg1.module.css'
 
-const BackgroundIlustration = () => {
+const Bg1 = () => {
   return (
     <div className={styles.bgContainer}>
       <div className={styles.planet}></div>
@@ -11,4 +11,4 @@ const BackgroundIlustration = () => {
   )
 }
 
-export default BackgroundIlustration
+export default Bg1
