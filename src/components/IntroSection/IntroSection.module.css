@@ -96,10 +96,6 @@
 }
 
 @media (max-width: 40rem) {
-  /* .svgContainer {
-    transform: translateY(-100rem);
-  } */
-
   .infoCard {
     grid-column: 1/7;
   }

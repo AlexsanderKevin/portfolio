@@ -66,3 +66,26 @@
 @keyframes rotate-2-1 {
   to { transform: rotate(-404deg);}
 }
+
+.star1 {
+  position: absolute;
+  top: 5rem;
+  left: 30rem;
+  animation: rotate-1 10s linear infinite;
+}
+
+.star2 {
+  position: absolute;
+  top: 10rem;
+  left: 55rem;
+  max-height: 70px;
+  animation: rotate-2 8s linear infinite;
+}
+
+.star3 {
+  position: absolute;
+  top: 22rem;
+  left: 40rem;
+  max-height: 50px;
+  animation: rotate-1 5s linear infinite;
+}

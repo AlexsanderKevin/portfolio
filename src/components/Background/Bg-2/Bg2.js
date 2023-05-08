@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Bg2.module.css'
+import { ReactComponent as StarSvg } from '../../../assets/svg/star.svg'
 
 const Bg2 = () => {
   return (
@@ -11,6 +12,9 @@ const Bg2 = () => {
           <div></div>
           <div></div>
         </div>
+        <StarSvg className={styles.star1}/>
+        <StarSvg className={styles.star2}/>
+        <StarSvg className={styles.star3}/>
       </div>
     </div>
   )

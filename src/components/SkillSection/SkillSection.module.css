@@ -11,6 +11,7 @@
   top: 5rem;
   left: 15rem;
   max-height: 110px;
+  animation: move-svg 3.5s linear infinite;
 }
 
 .planetGit {
@@ -18,6 +19,7 @@
   top: 20rem;
   right: 10rem;
   max-height: 80px;
+  animation: move-svg 2.5s linear infinite;
 }
 
 .systemJavascrip {
@@ -25,6 +27,7 @@
   max-height: 550px;
   top: 3rem;
   left: -10rem;
+  animation: move-svg 6s linear infinite;
 }
 
 .systemCss {
@@ -32,4 +35,11 @@
   max-height: 250px;
   top: 25rem;
   left: 25rem;
+  animation: move-svg 5s linear infinite;
+}
+
+@keyframes move-svg {
+  0% { transform: translateY(-1rem); }
+  50% { transform: translateY(0rem); }
+  100% { transform: translateY(-1rem); }
 }
