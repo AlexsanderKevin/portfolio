@@ -1,10 +1,9 @@
 import styles from './Logo.module.css'
+import { ReactComponent as LogoSvg } from '../../assets/svg/logo.svg'
 
 const Logo = () => {
     return (
-        <div 
-            className={` ${styles.logo} `} 
-        > K </div>
+        <LogoSvg className={` ${styles.logo} `} height={45}/>
     )
 }
 
