@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styles from './SkillSection.module.css'
-import { ReactComponent as PlanetHtml } from '../../assets/svg/planets/planet-html.svg'
-import { ReactComponent as PlanetGit } from '../../assets/svg/planets/planet-git.svg'
-import { ReactComponent as SystemJavascrip } from '../../assets/svg/planets/system-javascript.svg'
-import { ReactComponent as SystemCss } from '../../assets/svg/planets/system-css.svg'
+import { ReactComponent as PlanetHtml } from '../../../assets/svg/planets/planet-html.svg'
+import { ReactComponent as PlanetGit } from '../../../assets/svg/planets/planet-git.svg'
+import { ReactComponent as SystemJavascrip } from '../../../assets/svg/planets/system-javascript.svg'
+import { ReactComponent as SystemCss } from '../../../assets/svg/planets/system-css.svg'
 
 const SkillSection = () => {
   return (

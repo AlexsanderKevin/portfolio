@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './IntroSection.module.css'
-import Resume from '../../assets/Resume.pdf'
-import { ReactComponent as BustoSVG } from '../../assets/svg/busto.svg'
+import Resume from '../../../assets/Resume.pdf'
+import { ReactComponent as BustoSVG } from '../../../assets/svg/busto.svg'
 
 const IntroSection = () => {
   return (

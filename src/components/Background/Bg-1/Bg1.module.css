@@ -35,33 +35,39 @@
     position: absolute;
     top: 100vh;
     z-index: -100;
-    animation: rotation 30s linear infinite;
     opacity: .1;
 }
 
 .wave1 {
     left: -70vw;
+    transform: rotate(30deg);
+    animation: rotation-1 20s linear infinite;
 }
 
 .wave2 {
     left: -20vw;
-    animation-duration: 35s;
-    animation-delay: 2s;
+    /* animation-delay: 2s; */
+    animation: rotation-2 30s linear infinite;
 }
 
 .wave3 {
     left: 30vw;
-    animation-duration: 25s;
-    animation-delay: 3s;
+    /* animation-delay: 3s; */
+    animation: rotation 30s linear infinite;
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotate(deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotation-1 {
+    0% { transform: rotate(30deg); }
+    100% { transform: rotate(390deg); }
+}
+
+@keyframes rotation-2 {
+    0% { transform: rotate(15deg); }
+    100% { transform: rotate(375deg); }
 }
 
 @media (max-width: 40rem) {

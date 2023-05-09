@@ -2,8 +2,8 @@ import { GlobalStorage } from './GlobalContext';
 import Background from './components/Background/Background';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import IntroSection from './components/IntroSection/IntroSection';
-import SkillSection from './components/SkillSection/SkillSection';
+import IntroSection from './components/MainSection/IntroSection/IntroSection';
+import SkillSection from './components/MainSection/SkillSection/SkillSection';
 import './styles/global.css'
 
 function App() {

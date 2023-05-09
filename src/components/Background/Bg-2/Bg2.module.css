@@ -34,7 +34,7 @@
 }
 
 .sun div:nth-child(1) {
-  animation: rotate-1 40s linear infinite;
+  animation: rotate-1 45s linear infinite;
 }
 
 .sun div:nth-child(2) {
