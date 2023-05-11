@@ -3,15 +3,6 @@
   padding: 2rem 2rem 3rem 2rem;
   align-self: center;
   border-radius: .5rem;
-  animation: resize .3s linear forwards;
-  height: 0;
-}
-
-@keyframes resize {
-  0% { height: 0%; }
-  50% { height: 30%; }
-  99% { height: 60%; }
-  100% { height: initial; }
 }
 
 .svgContainer {
@@ -19,15 +10,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+}
+
+.active .svgContainer {
   animation: svg-enter .5s forwards;
 }
 
 @keyframes svg-enter {
-  from { transform: translateX(-20rem); }
-  to { transform: translateX(0);}
+  from { transform: translateX(-20rem); opacity: 0; }
+  to { transform: translateX(0); opacity: 1;}
 }
 
-.svgContainer svg{
+.active .svgContainer svg{
   animation: move-svg 5s linear infinite;
 }
 
@@ -40,6 +35,9 @@
 .introSection p:first-of-type {
   margin-bottom: 1.5rem;
   opacity: 0;
+}
+
+.active.introSection p:first-of-type {
   animation: fade-in .5s forwards;
   animation-delay: .3s;
 }
@@ -48,16 +46,24 @@
   font-size: 2rem;
   color: var(--color-main);
   opacity: 0;
+}
+
+.active.introSection h1 {
   animation: fade-in .5s forwards;
   animation-delay: .5s;
 }
 
+
+
 .introSection h2 {
   margin-bottom: 2.5rem;
   opacity: 0;
+  font-size: 1.8rem;
+}
+
+.active.introSection h2 {
   animation: fade-in .5s forwards;
   animation-delay: .7s;
-  font-size: 1.8rem;
 }
 
 .introSection h2::after {
@@ -69,6 +75,9 @@
   border-radius: .4rem;
   margin-top: .5rem;
   width: 0;
+}
+
+.active.introSection h2::after {
   animation: fill-bg .5s forwards;
   animation-delay: 1.1s;
 }
@@ -76,12 +85,18 @@
 .mainParagraph {
   margin-bottom: 3.5rem;
   opacity: 0;
+}
+
+.active .mainParagraph {
   animation: fade-in .5s forwards;
   animation-delay: .9s;
 }
 
 .introSection a {
   opacity: 0;
+}
+
+.active.introSection a {
   animation: fade-in .5s forwards;
   animation-delay: 1.1s;
 }

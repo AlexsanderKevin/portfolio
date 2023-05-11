@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './IntroSection.module.css'
 import Resume from '../../../assets/Resume.pdf'
 import { ReactComponent as BustoSVG } from '../../../assets/svg/busto.svg'
+import { GlobalContext } from '../../../GlobalContext'
 
 const IntroSection = () => {
+  const { section } = useContext(GlobalContext)
+
   return (
     <section 
       id='home'
@@ -11,6 +14,7 @@ const IntroSection = () => {
         grid-container 
         section-container 
         ${styles.introSection}
+        ${section === 0 ? styles.active : ''}
       `}
     >
       <div className={styles.svgContainer}>
