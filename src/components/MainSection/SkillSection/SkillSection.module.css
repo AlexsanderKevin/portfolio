@@ -12,7 +12,12 @@
   top: 5rem;
   left: 15rem;
   max-height: 110px;
-  animation: move-svg 3.5s linear infinite;
+  opacity: 0;
+}
+
+.active .planetHtml {
+  animation: fade-in .3s forwards, move-svg 3.5s linear infinite;
+  animation-delay: .9s;
 }
 
 .planetGit {
@@ -20,7 +25,12 @@
   top: 20rem;
   right: 10rem;
   max-height: 80px;
-  animation: move-svg 2.5s linear infinite;
+  opacity: 0;
+}
+
+.active .planetGit {
+  animation: fade-in .3s forwards, move-svg 2.5s linear infinite;
+  animation-delay: 1.2s;
 }
 
 .systemJavascrip {
@@ -28,7 +38,12 @@
   max-height: 550px;
   top: 3rem;
   left: -10rem;
-  animation: move-svg 6s linear infinite;
+  opacity: 0;
+}
+
+.active .systemJavascrip {
+  animation: fade-in .3s forwards, move-svg 6s linear infinite;
+  animation-delay: .3s;
 }
 
 .systemCss {
@@ -36,7 +51,16 @@
   max-height: 250px;
   top: 25rem;
   left: 25rem;
-  animation: move-svg 5s linear infinite;
+  opacity: 0;
+}
+
+.active .systemCss {
+  animation: fade-in .3s forwards, move-svg 5s linear infinite;
+  animation-delay: .6s;
+}
+
+@keyframes fade-in {
+  to {opacity: 1;}
 }
 
 @keyframes move-svg {
