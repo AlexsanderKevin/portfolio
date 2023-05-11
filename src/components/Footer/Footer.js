@@ -3,14 +3,14 @@ import styles from './Footer.module.css'
 import { GlobalContext } from '../../GlobalContext'
 
 const Footer = () => {
-  const storage = useContext(GlobalContext)
+  const context = useContext(GlobalContext)
 
   return (
     <footer
       className={`
         grid-container
         ${styles.footer}
-        ${storage.footer ? styles.active : ''}
+        ${context.footer ? styles.active : ''}
       `}
     >
       <p>Designed, Developed and Illustrated by Kevin Alexsander de Jesus.

@@ -4,9 +4,9 @@ import Bg2 from './Bg-2/Bg2'
 import { GlobalContext } from '../../GlobalContext'
 
 const Background = () => {
-  const storage = useContext(GlobalContext)
+  const context = useContext(GlobalContext)
 
-  switch (storage.section) {
+  switch (context.section) {
     case 0: return <Bg1/>
     case 1: return <Bg2/>
     default: return null

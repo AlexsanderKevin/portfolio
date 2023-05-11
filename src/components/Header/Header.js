@@ -6,11 +6,11 @@ import { GlobalContext } from '../../GlobalContext'
 
 const Header = () => {
     const [ sticked, setSticked ] = useState(false)
-    const storage = useContext(GlobalContext)
+    const context = useContext(GlobalContext)
 
     useEffect(() => {
-        setSticked( storage.top >= 60 ? true : false )
-    }, [ storage.top ])
+        setSticked( context.top >= 60 ? true : false )
+    }, [ context.top ])
 
     return (
         <header 
@@ -18,7 +18,7 @@ const Header = () => {
                 grid-container
                 ${styles.header} 
                 ${sticked ? styles.sticked : ''}
-                ${storage.header ? styles.active : ''}
+                ${context.header ? styles.active : ''}
             `}
         >
             <LogoButton/>

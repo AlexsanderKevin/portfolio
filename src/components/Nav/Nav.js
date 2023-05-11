@@ -8,7 +8,7 @@ import { GlobalContext } from '../../GlobalContext'
 const Nav = () => {
     const [ activeItem, setActiveItem ] = useState(0)
     const [ activeMenu, setActiveMenu ] = useState(false)
-    const storage = useContext(GlobalContext)
+    const context = useContext(GlobalContext)
 
     const items = useMemo(() => ([
         { id: 0, label: 'Home', href: '#home' },
@@ -40,7 +40,7 @@ const Nav = () => {
 
     }, [ activeMenu ])
 
-    useEffect(() => setActiveItem(storage.section), [storage.section])
+    useEffect(() => setActiveItem(context.section), [context.section])
 
     return (
         <>
