@@ -3,6 +3,12 @@
   padding: 2rem 2rem 3rem 2rem;
   align-self: center;
   border-radius: .5rem;
+  opacity: 0;
+}
+
+.active .infoCard {
+  opacity: 1;
+  transition: 1s;
 }
 
 .svgContainer {
