@@ -10,7 +10,7 @@ const Header = () => {
     const context = useContext(GlobalContext)
 
     useEffect(() => {
-        setSticked( context.top >= 60 ? true : false )
+        setSticked( context.top >= 100 ? true : false )
     }, [ context.top ])
 
     return (
@@ -33,8 +33,8 @@ const Header = () => {
                 <a href='https://wa.me/5519984464386' target='blank'>
                     <i className='pi pi-whatsapp'></i>
                 </a>
-                <a href='https://wa.me/5519984464386' target='blank'>
-                    <i className='pi pi-gmail'></i>
+                <a href='mailto:kevin13348@gmail.com' target='blank'>
+                    <i className='pi pi-envelope'></i>
                 </a>
             </div>
             <Nav sticked={sticked}/>

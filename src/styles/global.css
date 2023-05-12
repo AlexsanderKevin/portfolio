@@ -11,7 +11,8 @@ body {
     --type-main: 'Montserrat', sans-serif;
     --type-title: 'Alfa Slab One', cursive;
     --color-main: #fff;
-    --color-secondary: #be91ce;
+    --color-secondary: #be91ce ;
+    --color-font-dark: #551A8B;
     --color-bg-1: #100B21;
     --color-bg-1-glass: #0a0819e1;
     --color-bg-2: #291745;

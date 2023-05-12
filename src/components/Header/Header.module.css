@@ -15,7 +15,6 @@
 
 .sticked {
     backdrop-filter: blur(100px);
-    transition: .3s;
 }
 
 .contactIcons {
@@ -28,6 +27,7 @@
 
 .contactIcons i {
     font-size: 1.8rem;
+    color: var(--color-font-dark);
 }
 
 .contactIcons i:hover {
@@ -37,5 +37,10 @@
 @media (max-width: 40rem) {
     .header {
         margin-top: 0;
+    }
+
+    .contactIcons {
+        grid-column: 2/6;
+        justify-content: center;
     }
 }
