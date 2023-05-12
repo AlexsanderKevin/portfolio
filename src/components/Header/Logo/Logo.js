@@ -3,7 +3,7 @@ import { ReactComponent as LogoSvg } from '../../../assets/svg/logo.svg'
 
 const Logo = () => {
     return (
-        <LogoSvg className={` ${styles.logo} `} height={40}/>
+        <LogoSvg className={` ${styles.logo} `} height={'2.2rem'}/>
     )
 }
 

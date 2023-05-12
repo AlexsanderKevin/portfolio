@@ -15,8 +15,24 @@
 
 .sticked {
     backdrop-filter: blur(100px);
+    transition: .3s;
 }
 
+.contactIcons {
+    grid-column: 4/7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contactIcons i {
+    font-size: 1.8rem;
+}
+
+.contactIcons i:hover {
+    color: var(--color-emphasys);
+}
 
 @media (max-width: 40rem) {
     .header {
