@@ -20,7 +20,7 @@
 }
 
 .active .svgContainer {
-  animation: svg-enter .5s forwards;
+  animation: svg-enter 0s forwards;
 }
 
 @keyframes svg-enter {

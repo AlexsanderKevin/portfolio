@@ -10,7 +10,9 @@ export const GlobalStorage = ({children}) => {
   const [ section, setSection ] = useState(0)
 
   useEffect(() => {
-    const debounceSetTop = debounce(() => {setTop(window.scrollY)}, 50)
+    const debounceSetTop = debounce(() => {
+      setTop(window.scrollY)
+    }, 20)
     document.addEventListener('scroll', debounceSetTop)
   }, [])
 
