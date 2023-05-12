@@ -1,9 +1,9 @@
 import styles from './Nav.module.css'
-import '../../styles/animation.css'
-import Anchor from '../Anchor/Anchor'
+import '../../../styles/animation.css'
+import Anchor from '../../Anchor/Anchor'
 import { useContext, useEffect, useMemo, useState } from 'react'
 import Hamburger from '../Hamburger/Hamburger'
-import { GlobalContext } from '../../GlobalContext'
+import { GlobalContext } from '../../../GlobalContext'
 
 const Nav = () => {
     const [ activeItem, setActiveItem ] = useState(0)

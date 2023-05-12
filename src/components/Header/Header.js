@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
-import LogoButton from '../Logo/LogoButton'
-import Nav from '../Nav/Nav'
+import LogoButton from './Logo/LogoButton'
+import Nav from './Nav/Nav'
 import styles from './Header.module.css'
 import { GlobalContext } from '../../GlobalContext'
 

@@ -1,5 +1,5 @@
 import styles from './Logo.module.css'
-import { ReactComponent as LogoSvg } from '../../assets/svg/logo.svg'
+import { ReactComponent as LogoSvg } from '../../../assets/svg/logo.svg'
 
 const Logo = () => {
     return (
