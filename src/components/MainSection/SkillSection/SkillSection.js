@@ -4,10 +4,11 @@ import styles from './SkillSection.module.css'
 const SkillSection = () => {
   return (
     <section
-     className={`
-      container
-      section-container
-     `}
+      id='skills'
+      className={`
+        container
+        section-container
+      `}
     >
       <div className={styles.planetarySystem}>
         <div className={`${styles.orbit} ${styles.orbit3}`}>
@@ -15,6 +16,7 @@ const SkillSection = () => {
           <div className={`glass-card ${styles.planet}`}></div>
 
           <div className={`${styles.orbit} ${styles.orbit2}`}>
+            <div className={`glass-card ${styles.planet}`}></div>
             <div className={`glass-card ${styles.planet}`}></div>
             <div className={`glass-card ${styles.planet}`}></div>
             <div className={`glass-card ${styles.planet}`}></div>
