@@ -12,7 +12,7 @@ function App() {
     <section id='body' className='container'>
       <Background/>
       <Header/>
-      <IntroSection/>
+      {/* <IntroSection/> */}
       <SkillSection/>
       <Footer/>
     </section>

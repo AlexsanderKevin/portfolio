@@ -1,0 +1,96 @@
+.skillSection {
+  display: flex; 
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.planetHtml {
+  position: absolute;
+  top: 5rem;
+  left: 15rem;
+  max-height: 110px;
+  opacity: 0;
+}
+
+.active .planetHtml {
+  animation: fade-in .3s forwards, move-svg 3.5s linear infinite;
+  animation-delay: .9s;
+}
+
+.planetGit {
+  position: absolute;
+  top: 20rem;
+  right: 10rem;
+  max-height: 80px;
+  opacity: 0;
+}
+
+.active .planetGit {
+  animation: fade-in .3s forwards, move-svg 2.5s linear infinite;
+  animation-delay: 1.2s;
+}
+
+.systemJavascrip {
+  position: absolute;
+  max-height: 550px;
+  top: 3rem;
+  left: -10rem;
+  opacity: 0;
+}
+
+.active .systemJavascrip {
+  animation: fade-in .3s forwards, move-svg 6s linear infinite;
+  animation-delay: .3s;
+}
+
+.systemCss {
+  position: absolute;
+  max-height: 250px;
+  top: 25rem;
+  left: 25rem;
+  opacity: 0;
+}
+
+.active .systemCss {
+  animation: fade-in .3s forwards, move-svg 5s linear infinite;
+  animation-delay: .6s;
+}
+
+@keyframes fade-in {
+  to {opacity: 1;}
+}
+
+@keyframes move-svg {
+  0% { transform: translateY(-1rem); }
+  50% { transform: translateY(0rem); }
+  100% { transform: translateY(-1rem); }
+}
+
+@media (max-width: 40rem) {
+  .planetHtml {
+    left: 0;
+    max-height: 80px;
+  }
+
+  .systemJavascrip {
+    max-width: 100vw;
+    top: 0rem;
+    left: -2rem;
+  }
+
+  .planetGit {
+    top: 20rem;
+    right: 2rem;
+    max-height: 50px;
+  }
+
+  .systemCss {
+    max-width: 70vw;
+    top: 22rem;
+    left: initial;
+    right: 0rem;
+  }
+}
