@@ -22,6 +22,9 @@
   cursor: pointer;
   transition: .2s;
   opacity: 0;
+}
+
+.active .planet {
   animation: fade-in .3s forwards;
 }
 
@@ -80,28 +83,27 @@
   right: 2.5rem;
 }
 
-.orbit {
+.active .orbit {
   animation: rotate 60s linear infinite, fade-in-border .3s forwards;
 }
 
-.orbit1
-.orbit1 > .planet {
+.active .orbit1
+.active .orbit1 > .planet {
+  animation-delay: .5s;
+}
+
+.active .orbit2,
+.active .orbit2 > .planet {
+  animation-delay: .5s;
+}
+
+.active .orbit3,
+.active .orbit3 > .planet {
   animation-delay: 1s;
-}
-
-.orbit2,
-.orbit2 > .planet {
-  animation-delay: 1.5s;
-}
-
-.orbit3,
-.orbit3 > .planet {
-  animation-delay: 2s;
 }
 
 .orbit:hover {
   animation-play-state: paused;
-  border-style: solid;
 }
 
 

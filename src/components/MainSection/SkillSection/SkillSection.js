@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './SkillSection.module.css'
+import { GlobalContext } from '../../../GlobalContext'
 
 const SkillSection = () => {
+  const { section } = useContext(GlobalContext)
+
   return (
     <section
       id='skills'
       className={`
         container
         section-container
+        ${section === 1 ? styles.active : ''}
       `}
     >
       <div className={styles.planetarySystem}>
