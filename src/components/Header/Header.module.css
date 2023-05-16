@@ -31,7 +31,7 @@
 }
 
 .contactIcons i:hover {
-    color: var(--color-emphasys);
+    color: var(--color-action);
 }
 
 @media (max-width: 40rem) {

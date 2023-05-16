@@ -18,6 +18,7 @@ body {
     --color-bg-2: #291745;
     --color-bg-2-glass: #2d2644de;
     --color-emphasys: #A849C0;
+    --color-action: #8DD126;
 
     font-family: var(--type-main);
     background-color: var(--color-bg-1);

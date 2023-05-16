@@ -19,7 +19,7 @@
 
 
 .navContainer a:global(.active)::after {
-    background-color: var(--color-emphasys);
+    background-color: var(--color-action);
 }
 
 @media (max-width: 40rem) {
