@@ -101,8 +101,6 @@ strong {
 }
 
 .anchor-main:hover {
-    /* color: var(--color-emphasys); */
-    /* font-weight: bold; */
     color: white;
     transition: .2s;
 }

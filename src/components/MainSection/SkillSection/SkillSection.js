@@ -18,11 +18,10 @@ const SkillSection = () => {
         <div className={`${styles.orbit} ${styles.orbit3}`}>
           <div className={`glass-card ${styles.planet}`}></div>
           <div className={`glass-card ${styles.planet}`}></div>
+          <div className={`glass-card ${styles.planet}`}></div>
+          <div className={`glass-card ${styles.planet}`}></div>
 
           <div className={`${styles.orbit} ${styles.orbit2}`}>
-            <div className={`glass-card ${styles.planet}`}></div>
-            <div className={`glass-card ${styles.planet}`}></div>
-            <div className={`glass-card ${styles.planet}`}></div>
             <div className={`glass-card ${styles.planet}`}></div>
             <div className={`glass-card ${styles.planet}`}></div>
 

@@ -24,9 +24,7 @@
   opacity: 0;
 }
 
-.active .planet {
-  animation: fade-in .3s forwards;
-}
+.active .planet { animation: fade-in .3s forwards;}
 
 .planet:hover,
 .planetCenter:hover
@@ -43,69 +41,18 @@
   transition: .2s;
 }
 
-.orbit .planet:nth-of-type(1) {
-  top: -2rem;
-}
+.orbit .planet:nth-of-type(1) { top: -2rem;}
+.orbit .planet:nth-of-type(2) { bottom: -2rem;}
+.orbit .planet:nth-of-type(3) { right: -2rem;}
+.orbit .planet:nth-of-type(4) { left: -2rem;}
 
-.orbit .planet:nth-of-type(2) {
-  bottom: -2rem;
-}
+.active .orbit { animation: rotate 60s linear infinite, fade-in-border .3s forwards;}
 
-.orbit .planet:nth-of-type(3) {
-  right: -2rem;
-}
+.active .orbit1, .active .orbit1 > .planet { animation-delay: .5s;}
+.active .orbit2, .active .orbit2 > .planet { animation-delay: 1s;}
+.active .orbit3, .active .orbit3 > .planet { animation-delay: 1.5s;}
 
-.orbit .planet:nth-of-type(4) {
-  left: -2rem;
-}
-
-.orbit2 > .planet:nth-of-type(1) {
-  top: -2rem;
-}
-
-.orbit2 > .planet:nth-of-type(2) {
-  top: 5.5rem;
-  right: -1.3rem;
-}
-
-.orbit2 > .planet:nth-of-type(3) {
-  top: 5.5rem;
-  left: -1.3rem;
-}
-
-.orbit2 > .planet:nth-of-type(4) {
-  bottom: .5rem;
-  left: 2.5rem;
-}
-
-.orbit2 > .planet:nth-of-type(5) {
-  bottom: .5rem;
-  right: 2.5rem;
-}
-
-.active .orbit {
-  animation: rotate 60s linear infinite, fade-in-border .3s forwards;
-}
-
-.active .orbit1
-.active .orbit1 > .planet {
-  animation-delay: .5s;
-}
-
-.active .orbit2,
-.active .orbit2 > .planet {
-  animation-delay: .5s;
-}
-
-.active .orbit3,
-.active .orbit3 > .planet {
-  animation-delay: 1s;
-}
-
-.orbit:hover {
-  animation-play-state: paused;
-}
-
+.orbit:hover { animation-play-state: paused;}
 
 @keyframes rotate { to {transform: rotate(359deg);}}
 @keyframes fade-in-border { to {border: dashed 1px rgba(255, 255, 255, 0.5);}}

@@ -12,9 +12,9 @@ const Bg2 = () => {
           <div></div>
           <div></div>
         </div>
-        <StarSvg className={styles.star1}/>
+        {/* <StarSvg className={styles.star1}/>
         <StarSvg className={styles.star2}/>
-        <StarSvg className={styles.star3}/>
+        <StarSvg className={styles.star3}/> */}
       </div>
     </div>
   )
