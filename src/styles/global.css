@@ -95,6 +95,18 @@ strong {
     backdrop-filter: blur(10px);
 }
 
+.anchor-main {
+    color: var(--color-action);
+    transition: .2s;
+}
+
+.anchor-main:hover {
+    /* color: var(--color-emphasys); */
+    /* font-weight: bold; */
+    color: white;
+    transition: .2s;
+}
+
 @media (max-width: 40rem) {
     .grid-container {
         grid-template-columns: repeat(6, 1fr);

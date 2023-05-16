@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import styles from './IntroSection.module.css'
 import Resume from '../../../assets/Resume.pdf'
-import { ReactComponent as BustoSVG } from '../../../assets/svg/busto.svg'
 import { GlobalContext } from '../../../GlobalContext'
 import Bust from '../../Ilustrations/Bust/Bust'
 
@@ -19,7 +18,6 @@ const IntroSection = () => {
       `}
     >
       <div className={styles.svgContainer}>
-        {/* <BustoSVG className={styles.BustoSVG}/> */}
         <Bust active={section === 0}/>
       </div>
       <div className={`glass-card ${styles.infoCard}`}>
@@ -28,11 +26,12 @@ const IntroSection = () => {
         <h2 className='title-secondary title breathing'>I do pretty stuff on the computer</h2>
         <p className={` ${styles.mainParagraph} `}>I'm a software developer specializing in <strong>building and designing front-end</strong> (and ocasionally back-end) applications.</p>
         <a 
-          className='button-main fill-bg' 
           href={Resume}
           download='Resume'
+          className='anchor-main'
         >
           Resume
+          <i className='pi pi-download' style={{marginLeft: '.5rem'}}></i>
         </a>
       </div>
     </section>
