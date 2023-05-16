@@ -27,8 +27,7 @@
 .active .planet { animation: fade-in .3s forwards;}
 
 .planet:hover,
-.planetCenter:hover
-{
+.planetCenter:hover {
   scale: 1.2;
   transition: .2s;
 }
@@ -57,3 +56,9 @@
 @keyframes rotate { to {transform: rotate(359deg);}}
 @keyframes fade-in-border { to {border: dashed 1px rgba(255, 255, 255, 0.5);}}
 @keyframes fade-in { to {opacity: 1;}}
+
+@media (max-width: 40rem) {
+  .planetCenter { height: 4rem; width: 4rem;}
+  .planet { height: 3rem; width: 3rem;}
+  .orbit { padding: 3.1rem;}
+}
