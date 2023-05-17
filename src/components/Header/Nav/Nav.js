@@ -12,8 +12,7 @@ const Nav = () => {
 
     const items = useMemo(() => ([
         { id: 0, label: 'Home', href: '#home' },
-        { id: 1, label: 'Skills', href: '#skills' },
-        // { id: 2, label: 'About', href: '#about' },
+        { id: 1, label: 'About', href: '#about' },
         // { id: 3, label: 'Experience', href: '#experience' },
         // { id: 4, label: 'Work', href: '#work' },
         // { id: 5, label: 'Contact', href: '#contact' },

@@ -18,7 +18,7 @@ const SkillSection = () => {
 
   return (
     <section
-      id='skills'
+      id='about'
       className={`
         container
         section-container

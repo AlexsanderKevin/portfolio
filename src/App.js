@@ -3,7 +3,7 @@ import Background from './components/Background/Background';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import IntroSection from './components/MainSection/IntroSection/IntroSection';
-import SkillSection from './components/MainSection/SkillSection/SkillSection';
+import AboutSection from './components/MainSection/AboutSection/AboutSection';
 import './styles/global.css'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Background/>
       <Header/>
       <IntroSection/>
-      <SkillSection/>
+      <AboutSection/>
       <Footer/>
     </section>
     </GlobalStorage>
