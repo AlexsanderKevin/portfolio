@@ -1,0 +1,7 @@
+:global(.focus-mode) .planet{
+  display: none;
+}
+
+.focus.planet {
+  display: flex;
+}

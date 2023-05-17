@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import styles from './SkillSection.module.css'
 import { GlobalContext } from '../../../GlobalContext'
 import { ReactComponent as JavascriptSVG } from '../../../assets/svg/icons/svg-javascript.svg'
@@ -12,9 +12,25 @@ import { ReactComponent as BootstrapSVG } from '../../../assets/svg/icons/svg-bo
 import { ReactComponent as SassSVG } from '../../../assets/svg/icons/svg-sass.svg'
 import { ReactComponent as FigmaSVG } from '../../../assets/svg/icons/svg-figma.svg'
 import BustMini from '../../Ilustrations/BustMini/BustMini'
+import Planet from './Planet/Planet'
 
 const SkillSection = () => {
+  const [ focusMode, setFocusmode ] = useState(null)
+  const [ focus, setFocus ] = useState(null)
   const { section } = useContext(GlobalContext)
+
+  const handleFocus = () => {
+    setFocusmode(focus !== null)
+  }
+
+  useEffect(() => setFocusmode(focus !== null), [focus])
+
+  const handleClickPlanet = event => {
+    setFocus(event.currentTarget.getAttribute('id'))
+  }
+
+  console.log(focus)
+
 
   return (
     <section
@@ -25,24 +41,25 @@ const SkillSection = () => {
         ${section === 1 ? styles.active : ''}
       `}
     >
-      <div className={styles.planetarySystem}>
+      <div className={`${styles.planetarySystem} ${focusMode ? 'focus-mode' : ''}`}>
+
         <div className={`${styles.orbit} ${styles.orbit3}`}>
-          <div className={`glass-card ${styles.planet}`}><ReactSVG/></div>
-          <div className={`glass-card ${styles.planet}`}><JquerySVG/></div>
-          <div className={`glass-card ${styles.planet}`}><BootstrapSVG/></div>
-          <div className={`glass-card ${styles.planet}`}><SassSVG/></div>
+          <Planet id='react' onClick={handleClickPlanet} focus={focus}><ReactSVG/></Planet>
+          <Planet id='jquery' onClick={handleClickPlanet} focus={focus}><JquerySVG/></Planet>
+          <Planet id='bootstrap' onClick={handleClickPlanet} focus={focus}><BootstrapSVG/></Planet>
+          <Planet id='sass' onClick={handleClickPlanet} focus={focus}><SassSVG/></Planet>
 
           <div className={`${styles.orbit} ${styles.orbit2}`}>
-            <div className={`glass-card ${styles.planet}`}><GitSVG/></div>
-            <div className={`glass-card ${styles.planet}`}><FigmaSVG/></div>
+            <Planet id='git' onClick={handleClickPlanet} focus={focus}><GitSVG/></Planet>
+            <Planet id='figma' onClick={handleClickPlanet} focus={focus}><FigmaSVG/></Planet>
 
             <div className={`${styles.orbit} ${styles.orbit1}`}>
-              <div className={`glass-card ${styles.planet}`}><JavascriptSVG/></div>
-              <div className={`glass-card ${styles.planet}`}><NodetSVG/></div>
-              <div className={`glass-card ${styles.planet}`}><HtmlSVG/></div>
-              <div className={`glass-card ${styles.planet}`}><CssSVG/></div>
+              <Planet id='javascript' onClick={handleClickPlanet} focus={focus}><JavascriptSVG/></Planet>
+              <Planet id='node' onClick={handleClickPlanet} focus={focus}><NodetSVG/></Planet>
+              <Planet id='html' onClick={handleClickPlanet} focus={focus}><HtmlSVG/></Planet>
+              <Planet id='css' onClick={handleClickPlanet} focus={focus}><CssSVG/></Planet>
 
-              <div className={`glass-card ${styles.planetCenter}`}><BustMini active={section === 1}/></div>
+              <Planet id='bust-mini' onClick={handleClickPlanet} center={true} focus={focus}><BustMini active={ section === 1 }/></Planet>
             </div>
           </div>
         </div>
