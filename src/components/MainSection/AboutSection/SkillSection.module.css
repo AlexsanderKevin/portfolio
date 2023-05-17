@@ -52,7 +52,7 @@
 
 .planetCenter svg { height: 4.5rem;}
 
-.active .planetCenter { animation: planet-center-enter .5s forwards;}
+.active .planetCenter { animation: planet-center-enter .7s forwards 1s, rotate 20.05s linear infinite 1.5s reverse;}
 
 .orbit .planet:nth-of-type(1) { top: -2rem;}
 .orbit .planet:nth-of-type(2) { bottom: -2rem; transform: rotate(180deg);}
@@ -61,11 +61,9 @@
 
 .active .orbit { animation: rotate 60s linear infinite, fade-in-border .3s forwards;}
 
-.active .orbit1, .active .orbit1 > .planet { animation-delay: .4s;}
-.active .orbit2, .active .orbit2 > .planet { animation-delay: .7s;}
-.active .orbit3, .active .orbit3 > .planet { animation-delay: 1s;}
-
-.orbit:hover { animation-play-state: paused;}
+.active .orbit1, .active .orbit1 > .planet { animation-delay: 1.3s;}
+.active .orbit2, .active .orbit2 > .planet { animation-delay: 1.6s;}
+.active .orbit3, .active .orbit3 > .planet { animation-delay: 1.9s;}
 
 @keyframes rotate { to {transform: rotate(359deg);}}
 @keyframes fade-in-border { to {border: dashed 1px rgba(255, 255, 255, 0.5);}}

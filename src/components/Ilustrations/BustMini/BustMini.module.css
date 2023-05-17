@@ -1,0 +1,10 @@
+.bustoMiniSvg {
+  stroke-dasharray: 1843;
+  stroke-dashoffset: 1843;
+}
+
+.active.bustoMiniSvg {
+  animation: fill-stroke 10s ease forwards;
+}
+
+@keyframes fill-stroke { to {stroke-dashoffset: 0;}}
