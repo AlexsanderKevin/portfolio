@@ -11,6 +11,7 @@ import { ReactComponent as JquerySVG } from '../../../assets/svg/icons/svg-jquer
 import { ReactComponent as BootstrapSVG } from '../../../assets/svg/icons/svg-bootstrap.svg'
 import { ReactComponent as SassSVG } from '../../../assets/svg/icons/svg-sass.svg'
 import { ReactComponent as FigmaSVG } from '../../../assets/svg/icons/svg-figma.svg'
+import { ReactComponent as BustoMiniSVG } from '../../../assets/svg/busto-mini.svg'
 
 const SkillSection = () => {
   const { section } = useContext(GlobalContext)
@@ -41,7 +42,7 @@ const SkillSection = () => {
               <div className={`glass-card ${styles.planet}`}><HtmlSVG/></div>
               <div className={`glass-card ${styles.planet}`}><CssSVG/></div>
 
-              <div className={`glass-card ${styles.planetCenter}`}></div>
+              <div className={`glass-card ${styles.planetCenter}`}><BustoMiniSVG/></div>
             </div>
           </div>
         </div>

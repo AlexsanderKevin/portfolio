@@ -7,7 +7,7 @@
 .orbit {
   border-radius: 50%;
   position: relative;
-  padding: 4.5rem;
+  padding: 4.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,63 +17,65 @@
 .planet {
   border-radius: 50%;
   position: absolute;
-  height: 4rem;
-  width: 4rem;
+  height: 3.5rem;
+  width: 3.4rem;
   cursor: pointer;
   transition: .2s;
   opacity: 0;
-}
-
-.active .planet { animation: fade-in .3s forwards;}
-
-.planet:hover,
-.planetCenter:hover {
-  scale: 1.2;
-  transition: .2s;
-}
-
-.planetCenter {
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: .2s;
-}
-
-.planet {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.planet img { scale: .3;}
-.planet svg {
-  height: 2.8rem;
-}
+.planet svg { height: 2.5rem;}
+
 .planet:not(:hover) svg * {
   stroke: var(--color-emphasys);
   transition: .3s;
 }
 
+.active .planet { animation: fade-in .3s forwards;}
+
+.planet:hover { scale: 1.2; transition: .2s;}
+
+.planetCenter {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  scale: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planetCenter svg { height: 4.5rem;}
+
+.active .planetCenter { animation: planet-center-enter .5s forwards;}
+
 .orbit .planet:nth-of-type(1) { top: -2rem;}
-.orbit .planet:nth-of-type(2) { bottom: -2rem;}
-.orbit .planet:nth-of-type(3) { right: -2rem;}
-.orbit .planet:nth-of-type(4) { left: -2rem;}
+.orbit .planet:nth-of-type(2) { bottom: -2rem; transform: rotate(180deg);}
+.orbit .planet:nth-of-type(3) { right: -2rem; transform: rotate(90deg);}
+.orbit .planet:nth-of-type(4) { left: -2rem; transform: rotate(-90deg);}
 
 .active .orbit { animation: rotate 60s linear infinite, fade-in-border .3s forwards;}
 
-.active .orbit1, .active .orbit1 > .planet { animation-delay: .5s;}
-.active .orbit2, .active .orbit2 > .planet { animation-delay: 1s;}
-.active .orbit3, .active .orbit3 > .planet { animation-delay: 1.5s;}
+.active .orbit1, .active .orbit1 > .planet { animation-delay: .4s;}
+.active .orbit2, .active .orbit2 > .planet { animation-delay: .7s;}
+.active .orbit3, .active .orbit3 > .planet { animation-delay: 1s;}
 
 .orbit:hover { animation-play-state: paused;}
 
 @keyframes rotate { to {transform: rotate(359deg);}}
 @keyframes fade-in-border { to {border: dashed 1px rgba(255, 255, 255, 0.5);}}
 @keyframes fade-in { to {opacity: 1;}}
+@keyframes planet-center-enter { to {scale: 1.3;}}
 
 @media (max-width: 40rem) {
-  .planetCenter { height: 4rem; width: 4rem;}
+  .planetCenter { height: 3.5rem; width: 3.5rem; scale: 5;}
+  .planetCenter svg { height: 3rem;}
   .planet { height: 3rem; width: 3rem;}
+  .planet svg { height: 2rem;}
   .orbit { padding: 3.1rem;}
 }
