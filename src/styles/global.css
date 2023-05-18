@@ -20,6 +20,8 @@ body {
     --color-emphasys: #A849C0;
     --color-action: #8DD126;
 
+    --border-glass: solid 1px #c37ddd80;
+
     font-family: var(--type-main);
     background-color: var(--color-bg-1);
     color: var(--color-secondary);

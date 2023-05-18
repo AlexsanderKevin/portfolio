@@ -1,3 +1,7 @@
+.aboutSection {
+  position: relative;
+}
+
 .planetarySystem {
   display: flex;
   justify-content: center;

@@ -5,7 +5,7 @@ import planetStyles from './Planet.module.css'
 const Planet = ({ id, children, center, focus, ...props }) => {
   return (
     <div 
-      id={`planet-${id}`}
+      id={`${id}`}
       className={`
         glass-card 
         ${planetStyles.planet}

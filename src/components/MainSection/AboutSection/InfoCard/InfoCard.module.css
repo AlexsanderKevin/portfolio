@@ -1,0 +1,67 @@
+.background {
+  height: 110%;
+  width: 100%;
+  grid-column: 1/13;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+
+.container {
+  grid-column: 3/11;
+  display: flex;  
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.infoCard {
+  border-radius: .7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoCard h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--color-main);
+  display: inline-block;
+}
+
+.infoCard div {
+  padding: 0 2rem;
+}
+
+.infoCard p {
+  margin: 2rem 0;
+  color: var(--color-main);
+  opacity: .7;
+}
+
+.cardHeader {
+  border-bottom: var(--border-glass);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.buttonContainer button {
+  cursor: pointer;
+  border-radius: 50%;
+  color: var(--color-action);
+  transition: .2s;
+  font-size: 1.9rem;
+}
+
+.buttonContainer button:hover {
+  color: var(--color-main);
+  transition: .2s;
+  scale: 1.2;
+}

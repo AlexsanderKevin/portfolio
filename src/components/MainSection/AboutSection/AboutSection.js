@@ -13,6 +13,7 @@ import { ReactComponent as SassSVG } from '../../../assets/svg/icons/svg-sass.sv
 import { ReactComponent as FigmaSVG } from '../../../assets/svg/icons/svg-figma.svg'
 import BustMini from '../../Ilustrations/BustMini/BustMini'
 import Planet from './Planet/Planet'
+import InfoCard from './InfoCard/InfoCard'
 
 const SkillSection = () => {
   const [ focusMode, setFocusmode ] = useState(null)
@@ -24,6 +25,7 @@ const SkillSection = () => {
   const handleClickPlanet = event => {
     setFocus(event.currentTarget.getAttribute('id'))
   }
+  console.log(focus)
 
   return (
     <section
@@ -33,7 +35,7 @@ const SkillSection = () => {
         grid-container
         section-container
         ${section === 1 ? styles.active : ''}
-        ${styles.skillSection}
+        ${styles.aboutSection}
       `}
     >
       <div className={`${styles.planetarySystem} ${focusMode ? styles.focusMode : ''}`}>
@@ -59,6 +61,7 @@ const SkillSection = () => {
           </div>
         </div>
       </div>
+      <InfoCard target={focus} setTarget={setFocus}/>
     </section>
   )
 }
