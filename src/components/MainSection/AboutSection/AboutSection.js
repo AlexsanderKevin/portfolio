@@ -19,29 +19,24 @@ const SkillSection = () => {
   const [ focus, setFocus ] = useState(null)
   const { section } = useContext(GlobalContext)
 
-  const handleFocus = () => {
-    setFocusmode(focus !== null)
-  }
-
   useEffect(() => setFocusmode(focus !== null), [focus])
 
   const handleClickPlanet = event => {
     setFocus(event.currentTarget.getAttribute('id'))
   }
 
-  console.log(focus)
-
-
   return (
     <section
       id='about'
       className={`
         container
+        grid-container
         section-container
         ${section === 1 ? styles.active : ''}
+        ${styles.skillSection}
       `}
     >
-      <div className={`${styles.planetarySystem} ${focusMode ? 'focus-mode' : ''}`}>
+      <div className={`${styles.planetarySystem} ${focusMode ? styles.focusMode : ''}`}>
 
         <div className={`${styles.orbit} ${styles.orbit3}`}>
           <Planet id='react' onClick={handleClickPlanet} focus={focus}><ReactSVG/></Planet>

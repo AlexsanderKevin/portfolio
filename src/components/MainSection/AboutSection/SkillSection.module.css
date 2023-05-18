@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 1/13;
 }
 
 .orbit {
@@ -76,4 +77,10 @@
   .planet { height: 3rem; width: 3rem;}
   .planet svg { height: 2rem;}
   .orbit { padding: 3.1rem;}
+}
+
+/* Focus Mode */
+.focusMode {
+  opacity: .5;
+  transition: .5s;
 }
