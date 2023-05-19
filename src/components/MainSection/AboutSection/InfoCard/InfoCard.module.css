@@ -17,9 +17,7 @@
   gap: 3rem;
 }
 
-.icon {
-  height: 0;
-}
+.icon { height: 0;}
 
 .infoCard {
   border-radius: .7rem;
@@ -74,14 +72,30 @@
 }
 
 @keyframes resize { 
-  0%{
-    height: 0;
-  } 
-  99%{
-    height: 18rem;
-  }
+  0%{ height: 0;} 
+  99%{ height: 18rem;}
 }
 
-@keyframes fade-in {
-  to{opacity: 1;}
+@keyframes fade-in { to{opacity: 1;}}
+
+@media(max-width: 40rem) {
+  .background {
+    grid-column: 1/7;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .container {
+    grid-column: 1/7;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    height: 6rem;
+  }
+  .icon svg {
+    height: 8rem;
+  }
+  @keyframes resize { 
+    0%{ height: 0;} 
+    99%{ height: 23rem;}
+  }
 }

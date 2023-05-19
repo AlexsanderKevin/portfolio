@@ -1,5 +1,6 @@
 .aboutSection {
   position: relative;
+  padding-bottom: 3rem;
 }
 
 .planetarySystem {
@@ -76,15 +77,20 @@
 @keyframes planet-center-enter { to {scale: 1.3;}}
 
 @media (max-width: 40rem) {
-  .planetCenter { height: 3.5rem; width: 3.5rem; scale: 5;}
+  .active .planetCenter { 
+    height: 3.5rem; 
+    width: 3.5rem; 
+    scale: 5; 
+    animation: planet-center-enter .7s forwards 1s;
+    transform: rotate(-45deg);
+  }
   .planetCenter svg { height: 3rem;}
   .planet { height: 3rem; width: 3rem;}
   .planet svg { height: 2rem;}
   .orbit { padding: 3.1rem;}
-}
-
-/* Focus Mode */
-.focusMode {
-  opacity: .5;
-  transition: .5s;
+  .planetarySystem { grid-column: 1/7; }
+  .active .orbit { animation: fade-in-border .3s forwards;}
+  .orbit3 { transform: rotate(45deg);}
+  .orbit2 { transform: rotate(45deg);}
+  .orbit1 { transform: rotate(-45deg);}
 }

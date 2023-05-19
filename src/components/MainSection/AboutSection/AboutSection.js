@@ -23,7 +23,6 @@ const SkillSection = () => {
   const handleClickPlanet = event => {
     setFocus(event.currentTarget.getAttribute('id'))
   }
-  console.log(focus)
 
   return (
     <section
