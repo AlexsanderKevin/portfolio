@@ -6,10 +6,13 @@ const InfoCard = ({ target, setTarget }) => {
   const skill = skills[target]
 
   const handleClick = event => {
-    console.log(event.target)
+    const targetId = event.target.getAttribute('id')
+    if( targetId === 'skill-infocard-overlay' || targetId === 'skill-infocard-frame' ) {
+      setTarget(null)
+    }
   }
 
-  if (!target) return null
+  if (!skill) return null
   else return (
     <div id='skill-infocard-overlay' className={`${styles.background}`} onClick={handleClick}>
       <div id='skill-infocard-frame' className={styles.container}>
@@ -21,7 +24,7 @@ const InfoCard = ({ target, setTarget }) => {
 
           <div className={styles.buttonContainer}>
             <button onClick={() => setTarget(null)}><i className='pi pi-arrow-circle-left'></i></button>
-            <a className='anchor-main' href={skill.url}>Learn more<i className='pi pi-external-link' style={{marginLeft: '.5rem'}}></i></a>
+            <a className='anchor-main' href={skill.url} target='blank'>Learn more<i className='pi pi-external-link' style={{marginLeft: '.5rem'}}></i></a>
           </div>
 
         </div>

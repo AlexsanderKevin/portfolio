@@ -16,11 +16,9 @@ import Planet from './Planet/Planet'
 import InfoCard from './InfoCard/InfoCard'
 
 const SkillSection = () => {
-  const [ focusMode, setFocusmode ] = useState(null)
   const [ focus, setFocus ] = useState(null)
   const { section } = useContext(GlobalContext)
 
-  useEffect(() => setFocusmode(focus !== null), [focus])
 
   const handleClickPlanet = event => {
     setFocus(event.currentTarget.getAttribute('id'))
@@ -38,7 +36,7 @@ const SkillSection = () => {
         ${styles.aboutSection}
       `}
     >
-      <div className={`${styles.planetarySystem} ${focusMode ? styles.focusMode : ''}`}>
+      <div className={`${styles.planetarySystem}`}>
 
         <div className={`${styles.orbit} ${styles.orbit3}`}>
           <Planet id='react' onClick={handleClickPlanet} focus={focus}><ReactSVG/></Planet>

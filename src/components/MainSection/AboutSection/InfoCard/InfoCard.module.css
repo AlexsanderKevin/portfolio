@@ -7,7 +7,7 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
   align-items: center;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(20px);
 }
 
 .container {
@@ -17,10 +17,15 @@
   gap: 3rem;
 }
 
+.icon {
+  height: 0;
+}
+
 .infoCard {
   border-radius: .7rem;
   display: flex;
   flex-direction: column;
+  animation: resize .3s forwards;
 }
 
 .infoCard h1 {
@@ -33,6 +38,8 @@
 
 .infoCard div {
   padding: 0 2rem;
+  opacity: 0;
+  animation: fade-in .3s forwards .5s;
 }
 
 .infoCard p {
@@ -64,4 +71,17 @@
   color: var(--color-main);
   transition: .2s;
   scale: 1.2;
+}
+
+@keyframes resize { 
+  0%{
+    height: 0;
+  } 
+  99%{
+    height: 18rem;
+  }
+}
+
+@keyframes fade-in {
+  to{opacity: 1;}
 }

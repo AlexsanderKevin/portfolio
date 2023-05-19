@@ -57,7 +57,7 @@
 
 .planetCenter svg { height: 4.5rem;}
 
-.active .planetCenter { animation: planet-center-enter .7s forwards 1s, rotate 20.05s linear infinite 1.5s reverse;}
+.active .planetCenter { animation: planet-center-enter .7s forwards 1s, rotate 20s linear infinite 1.5s reverse;}
 
 .orbit .planet:nth-of-type(1) { top: -2rem;}
 .orbit .planet:nth-of-type(2) { bottom: -2rem; transform: rotate(180deg);}
