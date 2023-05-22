@@ -37,7 +37,7 @@
 .infoCard div {
   padding: 0 2rem;
   opacity: 0;
-  animation: fade-in .3s forwards .5s;
+  animation: fade-in .3s forwards .3s;
 }
 
 .infoCard p {
@@ -88,12 +88,8 @@
     flex-direction: column;
     align-items: center;
   }
-  .icon {
-    height: 6rem;
-  }
-  .icon svg {
-    height: 8rem;
-  }
+  .icon { height: 6rem;}
+  .icon svg { height: 8rem;}
   @keyframes resize { 
     0%{ height: 0;} 
     99%{ height: 23rem;}

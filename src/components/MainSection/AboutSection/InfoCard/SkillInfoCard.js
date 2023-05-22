@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from './InfoCard.module.css'
+import styles from './SkillInfoCard.module.css'
 import skills from './skills'
 
-const InfoCard = ({ target, setTarget }) => {
+const SkillInfoCard = ({ target, setTarget }) => {
   const skill = skills[target]
 
   const handleClick = event => {
@@ -33,4 +33,4 @@ const InfoCard = ({ target, setTarget }) => {
   )
 }
 
-export default InfoCard
+export default SkillInfoCard
