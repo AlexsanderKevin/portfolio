@@ -1,3 +1,7 @@
+.background {
+  grid-column: 1/13;
+}
+
 .aboutInfoCard {
-  
+  grid-column: 2/12;
 }
