@@ -1,7 +1,45 @@
-.background {
-  grid-column: 1/13;
+.background { grid-column: 1/13; }
+
+.aboutInfoCard { grid-column: 3/11; }
+
+.aboutCardBody {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  gap: 1rem;
 }
 
-.aboutInfoCard {
-  grid-column: 2/12;
+.aboutCardBody svg { grid-column: 1/2; }
+
+.aboutDetails {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.aboutDetails li { margin-bottom: .5rem; }
+
+.bio {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+.bio p, .bio h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.bio h2 {
+  font-weight: normal;
+  color: var(--color-main);
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.bio h2::after {
+  content: '';
+  display: block;  
+  height: 3px; 
+  width: 5rem;
+  background-color: var(--color-main);
+  margin-top: 4px;
 }
