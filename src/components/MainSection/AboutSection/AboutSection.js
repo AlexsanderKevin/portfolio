@@ -61,7 +61,7 @@ const SkillSection = () => {
         </div>
       </div>
       <SkillInfoCard target={focus} setTarget={setFocus}/>
-      <AboutInfoCard active={focus === 'bust-mini'} />
+      <AboutInfoCard active={focus === 'bust-mini'} setTarget={setFocus} />
     </section>
   )
 }

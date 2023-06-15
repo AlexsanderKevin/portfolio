@@ -3,7 +3,7 @@ import styles from './SkillInfoCard.module.css'
 import aboutStyles from './AboutInfoCard.module.css'
 import BustMini from '../../../Ilustrations/BustMini/BustMini'
 
-const AboutInfoCard = ({ active }) => {
+const AboutInfoCard = ({ active, setTarget }) => {
 
   if (!active) return null
   return (
@@ -24,6 +24,11 @@ const AboutInfoCard = ({ active }) => {
             <p>I work with software development since May 2022 and I am passionate about technology and design and always seek to improve my skills. </p>
             <p>I believe that the combination of technical knowledge and design skills is fundamental to build high-quality applications.</p>
             <p>I am excited to apply these skills to a successful career in front-end. Contact me to exchange ideas about technology and programming!</p>
+          </section>
+
+          <section className={aboutStyles.buttonContainer}>
+            <button onClick={() => setTarget(null)} ><i className='pi pi-arrow-circle-left'></i></button>
+            <a className='anchor-main' href={'https://www.linkedin.com/in/kevin-alexsander-1610b91ab/'} target='blank'>Connect with me<i className='pi pi-external-link' style={{marginLeft: '.5rem'}}></i></a>
           </section>
         </div>
       </div>
