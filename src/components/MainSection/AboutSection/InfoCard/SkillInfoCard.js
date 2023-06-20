@@ -14,7 +14,11 @@ const SkillInfoCard = ({ target, setTarget }) => {
 
   if (!skill) return null
   else return (
-    <div id='skill-infocard-overlay' className={`${styles.background}`} onClick={handleClick}>
+    <div 
+      id='skill-infocard-overlay' 
+      className={`${styles.background}`} 
+      onClick={handleClick}
+    >
       <div id='skill-infocard-frame' className={styles.container}>
         <div className={styles.icon}>{ skill.icon }</div>
 

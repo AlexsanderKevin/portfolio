@@ -5,20 +5,34 @@ import BustMini from '../../../Ilustrations/BustMini/BustMini'
 
 const AboutInfoCard = ({ active, setTarget }) => {
 
+  const handleClick = event => {
+    const targetId  = event.target.getAttribute('id')
+    if ( targetId === 'about-infocard-overlay' || targetId === 'about-infocard-frame') {
+      setTarget(null)
+    }
+  }
+
   if (!active) return null
   return (
-    <div id='skill-infocard-overlay' className={styles.background}>
-      <div className={`glass-card ${styles.infoCard} ${aboutStyles.aboutInfoCard}`}>
+    <div 
+      id='about-infocard-overlay' 
+      className={styles.background}
+      onClick={handleClick}
+    >
+      <div id='about-infocard-frame' className={`glass-card ${styles.infoCard} ${aboutStyles.aboutInfoCard}`}>
         <div className={styles.cardHeader}>
           <h1 className={`title`}>Who am I</h1>
         </div>
+
         <div className={`${aboutStyles.aboutCardBody}`}>
           <BustMini active={true} height='170' width='150'/>
+
           <ul className={`${aboutStyles.aboutDetails}`}>
             <li>09/03/2002</li>
             <li>Brazil</li>
             <li>Front-end</li>
           </ul>
+
           <section className={`${aboutStyles.bio}`}>
             <h2>Kevin Alexsander de Jesus</h2>
             <p>I work with software development since May 2022 and I am passionate about technology and design and always seek to improve my skills. </p>
