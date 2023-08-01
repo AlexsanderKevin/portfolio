@@ -20,7 +20,6 @@ const SkillSection = () => {
   const [ focus, setFocus ] = useState(null)
   const { section } = useContext(GlobalContext)
 
-  console.log(focus)
 
   const handleClickPlanet = event => {
     setFocus(event.currentTarget.getAttribute('id'))
