@@ -6,10 +6,10 @@ const SkillInfoCard = ({ target, setTarget }) => {
   const skill = skills[target]
 
   const handleClick = event => {
-    const targetId = event.target.getAttribute('id')
-    if( targetId === 'skill-infocard-overlay' || targetId === 'skill-infocard-frame' ) {
-      setTarget(null)
-    }
+    const clickedOutside = !event.target.closest(`#skill-infocard-frame svg`)
+      && !event.target.closest(`#skill-infocard-frame .glass-card`)
+
+    if (clickedOutside) setTarget(null)
   }
 
   if (!skill) return null
@@ -20,7 +20,8 @@ const SkillInfoCard = ({ target, setTarget }) => {
       onClick={handleClick}
     >
       <div className='grid-container'>
-        <div id='skill-infocard-frame' className={styles.container}>
+        <div id='skill-infocard-frame' className={styles.container}
+        >
           <div className={styles.icon}>{ skill.icon }</div>
 
           <div className={`glass-card ${styles.infoCard}`}>

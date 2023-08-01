@@ -32,10 +32,14 @@ body::-webkit-scrollbar {
     background-image: linear-gradient(var(--color-bg-1), var(--color-bg-2));
     width: .65rem;
 }
-body::-webkit-scrollbar-track {
+div::-webkit-scrollbar {
+    background: none;
+    width: .65rem;
+}
+*::-webkit-scrollbar-track {
     margin-top: 1rem
 }
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     border: solid 1px var(--color-secondary);
     border-radius: 5rem;
 }

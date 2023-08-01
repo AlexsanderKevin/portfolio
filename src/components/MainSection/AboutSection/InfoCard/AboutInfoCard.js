@@ -6,8 +6,7 @@ import BustMini from '../../../Ilustrations/BustMini/BustMini'
 const AboutInfoCard = ({ active, setTarget }) => {
 
   const handleClick = event => {
-    const targetId = event.target.getAttribute('id')
-    const clickedOutside = targetId === 'about-infocard-overlay' || targetId === 'about-infocard-frame'
+    const clickedOutside = !event.target.closest('#about-infocard-frame')
     if (clickedOutside) setTarget(null)
   }
 
