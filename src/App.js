@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import IntroSection from './components/MainSection/IntroSection/IntroSection';
 import AboutSection from './components/MainSection/AboutSection/AboutSection';
 import './styles/global.css'
+import ProjectsSection from './components/MainSection/ProjectsSection/ProjectsSection';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <IntroSection/>
       <AboutSection/>
+      <ProjectsSection/>
       <Footer/>
     </section>
     </GlobalStorage>
