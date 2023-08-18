@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import styles from './IntroSection.module.css'
-import Resume from '../../../assets/Resume.pdf'
+import Resume from '../../../assets/resume-kevin-alexsander.pdf'
 import { GlobalContext } from '../../../GlobalContext'
 import Bust from '../../Ilustrations/Bust/Bust'
 
@@ -27,7 +27,7 @@ const IntroSection = () => {
         <p className={` ${styles.mainParagraph} `}>I'm a software developer specializing in <strong>building and designing front-end</strong> (and ocasionally back-end) applications.</p>
         <a 
           href={Resume}
-          download='Resume'
+          download='resume-kevin-alexsander'
           className='anchor-main'
         >
           Resume
